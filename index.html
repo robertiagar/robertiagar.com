@@ -21,7 +21,7 @@ layout: default
 		
 		<p>Stay tuned!</p>
 	</div>
-    {% for post in site.posts %}
+    {% for post in sit.posts %}
     <div class="blog-post">
       <h2 class="blog-post-title">{{ post.title }}</h2>
       <p class="blog-post-meta">{{ post.date | date: "%b %-d, %Y"}} by <a href="{{ post.email | prepend: "mailto:"}}">{{ post.author }}</a> in {% for category in post.categories %}
