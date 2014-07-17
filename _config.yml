@@ -1,23 +1,11 @@
-# Site settings
-title: Robert's Blog
-email: robert.iagar@gmail.com
 author: "Robert Iagar"
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-baseurl: "/robertiagar-website"
-url: "http://robertigar.com"
-twitter_username: robertiagar
-github_username:  robertiagar
-
-# Build settings
+baseurl: ""
+description: "Student. .NET Developer. Amateur Photographer. Welcome to my blog."
+email: robert.iagar@gmail.com
+github_username: robertiagar
+highlighter: pygments
 markdown: kramdown
 permalink: pretty
-highlighter: rouge
-
-defaults: 
-  - 
-    scope: 
-      path: ""
-      type: "post"
-    values: 
-      author: "Robert Iagar"
-      email: "robert.iagar@gmail.com"
+title: "Robert's Blog"
+twitter_username: robertiagar
+url: "http://robertigar.com"
