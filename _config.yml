@@ -1,3 +1,4 @@
+---
 author: "Robert Iagar"
 baseurl: ""
 description: "Student. .NET Developer. Amateur Photographer. Welcome to my blog."
@@ -9,3 +10,13 @@ permalink: pretty
 title: "Robert's Blog"
 twitter_username: robertiagar
 url: "http://robertigar.com"
+defaults:
+   -
+     scope:
+       path: "posts"
+       type: "page"
+     values:
+      layout: "post"
+      author: "Robert Iagar"
+      email: robert.iagar@gmail.com
+
