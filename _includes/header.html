@@ -1,8 +1,18 @@
-<div class="blog-masthead">
-      <div class="container">
-        <nav class="blog-nav">
-          <a class="blog-nav-item active" href="{{ "/" | site.baseurl }}">Home</a>
-          <a class="blog-nav-item" href="{{ "/about/" | prepend: site.baseurl }}">About</a>
-        </nav>
-      </div>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{{ site.url }}}">{{ site.title }}</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+            	<li><a href="{{ "/" | site.baseurl }}"><i class="fa fa-home"></i> Home</a></li>
+      			<li><a href="{{ "/about/" | prepend: site.baseurl }}"><i class="fa fa-about"></i> About</a></li>
+            </ul>
+        </div>
     </div>
+</div>
