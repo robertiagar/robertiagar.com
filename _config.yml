@@ -13,8 +13,8 @@ url: "http://robertigar.com"
 defaults:
    -
      scope:
-       path: ""
-       type: "post"
+       path: "posts"
+       type: "page"
      values:
       layout: "post"
       author: "Robert Iagar"
