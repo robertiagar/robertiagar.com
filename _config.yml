@@ -14,7 +14,7 @@ defaults:
    -
      scope:
        path: "posts"
-       type: "page"
+       type: "post"
      values:
       layout: "post"
       author: "Robert Iagar"
