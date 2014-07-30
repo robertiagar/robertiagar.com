@@ -9,7 +9,7 @@ markdown: kramdown
 permalink: none
 title: "Robert's Blog"
 twitter_username: robertiagar
-url: "http://robertigar.com"
+url: "http://www.robertigar.com"
 defaults:
   -
    scope: 
