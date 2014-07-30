@@ -2,7 +2,8 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2014-07-16 01:30:05
-categories: jekyll update
+category: jekyll
+tags: jekyll update
 author: "Robert Iagar"
 email: "robert.iagar@gmail.com"
 ---
