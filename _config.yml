@@ -1,14 +1,6 @@
---- 
+---
 author: "Robert Iagar"
 baseurl: ""
-defaults: 
-  - 
-    scope: 
-      path: ""
-      type: post
-    values: 
-      author: "Robert Iagar"
-      email: robert.iagar@gmail.com
 description: "Student. .NET Developer. Amateur Photographer. Welcome to my blog."
 email: robert.iagar@gmail.com
 github_username: robertiagar
