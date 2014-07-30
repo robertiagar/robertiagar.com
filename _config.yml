@@ -4,7 +4,7 @@ baseurl: ""
 description: "Student. .NET Developer. Amateur Photographer. Welcome to my blog."
 email: robert.iagar@gmail.com
 github_username: robertiagar
-highlighter: rouge
+highlighter: pygments
 markdown: kramdown
 permalink: pretty
 title: "Robert's Blog"
