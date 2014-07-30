@@ -56,9 +56,8 @@ input[type="checkbox"].input-validation-error {
 }
 
 .blog-post {
-    height: 260px;
+    
     width: 100%;
-    display: table;
     text-align: center;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -67,7 +66,7 @@ input[type="checkbox"].input-validation-error {
 }
 
     .blog-post > .container > h1 {
-        font-size: 130px;
+        font-size: 100px;
         background: #ffffff;
         background: rgba(255, 255, 255, 0.9);
     }
@@ -86,6 +85,7 @@ input[type="checkbox"].input-validation-error {
 
     .jumbotron-large > .container > h1 {
         font-size: 130px;
+        color: #000000;
         background: #ffffff;
         background: rgba(255, 255, 255, 0.9);
         padding-bottom: 0;
@@ -93,6 +93,7 @@ input[type="checkbox"].input-validation-error {
     }
 
     .jumbotron-large > .container > h2 {
+        color: #000000;
         background: #ffffff;
         background: rgba(255,255,255,0.9);
         padding: 0;
@@ -100,6 +101,7 @@ input[type="checkbox"].input-validation-error {
     }
 
     .jumbotron-large > .container > p {
+        color: #000000;
         background: #ffffff;
         background: rgba(255,255,255,0.9);
         padding-top: 0;

@@ -1,22 +1,15 @@
 ---
 layout: default
 ---
-<div class="jumbotron jumbotron-large" data-background="/Assets/Images/bg_17.jpg">
-	<div class="container">
-		<img class="img-circle" src="/assets/images/bg.jpg"/>
-		<h1>{{ page.title }} <small>in {{ page.category }}</small></h1>
-		<h2>By <a href="{{post.email | prepend: "mailto:"}}">{{ post.author }}</a> | {{ page.date | date_to_string}}<h2>
-		<p>
-			{% for tag in page.tags %}
-				<a href="#"><span class="badge">{{ tag }}</span></a>
-			{% endfor %}
-		</p>
-	</div>
-</div>
 
 <div class="row">
-	<div class="col-md-offset-1 col-md-10">
+	<br />
+	<div class="col-md-12">
 		{{ content }}
 	</div>
+	<div class="col-md-12">
+		{% include disqus.html %}
+	</div>
 <div>
+
 

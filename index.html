@@ -1,12 +1,16 @@
 ---
 layout: default
+type: page
 ---
 
  	{% for post in site.posts %}
 	    <br />
-        <div class="jumbotron blog-post" data-background="/Images/bg_17.jpg" data-title="@blogPost.Title.ToLower().Replace(" ","-")">
+        <div class="jumbotron blog-post" data-background="{{ post.imageurl }}" data-title="{{ post.title }}">
             <div class="container">
-                <h1><a href="{{ post.url }}">{{ post.Title }}</a></h1>
+                <h1>
+                	<a href="{{ post.url }}">{{ post.title }}</a><br/>
+                	<a href="{{ post.url }}#disqus_thread">Comments </a>
+                </h1>
             </div>
         </div>
         <br />
