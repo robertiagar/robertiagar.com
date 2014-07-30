@@ -20,7 +20,7 @@ layout: default
 		<h2>By {% if page.author %} {{ page.author }}{% endif %}<h2>
 		<p>
 			{% for tag in page.tags %}
-				<a href="#"><span class="badge">tag</span></a>
+				<a href="#"><span class="badge">{{ tag }}</span></a>
 			{% endfor %}
 		</p>
 	</div>
