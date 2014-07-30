@@ -10,3 +10,12 @@ permalink: pretty
 title: "Robert's Blog"
 twitter_username: robertiagar
 url: "http://robertigar.com"
+defaults:
+   -
+     scope:
+       path: ""
+       type: "post"
+     values:
+      author: "Robert Iagar"
+      email: robert.iagar@gmail.com
+
