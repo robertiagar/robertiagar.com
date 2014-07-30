@@ -14,9 +14,8 @@ defaults:
    -
      scope:
        path: "posts"
-       type: "post"
+       type: "page"
      values:
-      layout: "post"
       author: "Robert Iagar"
       email: robert.iagar@gmail.com
 

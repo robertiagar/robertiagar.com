@@ -6,7 +6,7 @@ layout: default
 	<div class="container">
 		<img class="img-circle" src="/assets/images/bg.jpg"/>
 		<h1>{{ page.title }} <small>in {{ page.category }}</small></h1>
-		<h2>By {% if post.author %} {{ post.author }}{% endif %} | {{ page.date }}<h2>
+		<h2>By {% if page.author %} {{ page.author }}{% endif %} | {{ page.date | date_to_string}}<h2>
 		<p>
 			{% for tag in page.tags %}
 				<a href="#"><span class="badge">{{ tag }}</span></a>
