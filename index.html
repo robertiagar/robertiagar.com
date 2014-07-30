@@ -24,7 +24,7 @@ layout: default
     {% for post in site.posts %}
     <div class="blog-post">
       <h2 class="blog-post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      <p class="blog-post-meta">{{ post.date | date: "%b %-d, %Y"}} by <a href="{{ post.email | prepend: "mailto:"}}">{{ post.author }}</a> in <em>{{ post.category }}</em></p>
+      <p class="blog-post-meta">{{ post.date | date: "%b %-d, %Y"}} by <a href="{{ site.email | prepend: "mailto:"}}">{{ site.author }}</a> in <em>{{ post.category }}</em></p>
       {{ post.content }}
     </div>
     {% endfor %}
