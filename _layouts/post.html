@@ -8,7 +8,7 @@ layout: default
 		{{ content }}
 	</div>
 	<div class="col-md-12">
-		{% include disqus.html %}
+		{% include disqus.html posturl="{{page.url}}" posttitle="{{page.title}}" %}
 	</div>
 <div>
 
