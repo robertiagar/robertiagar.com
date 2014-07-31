@@ -106,4 +106,5 @@ input[type="checkbox"].input-validation-error {
         background: rgba(255,255,255,0.9);
         padding-top: 0;
         margin-top: 0;
+        margin-bottom: 15px;
     }
