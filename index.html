@@ -7,6 +7,6 @@ type: page
 <br/>
 <ul class="col-md-12">
 		{% for post in site.posts %}
-			<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+			<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a> &raquo; <a href="{{ post.url }}#disqus_thread">{{ post.title }}</a> </li> 
 		{% endfor %}
 </ul>
