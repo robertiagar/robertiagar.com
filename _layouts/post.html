@@ -1,13 +1,10 @@
 ---
 layout: default
 ---
-
 <div class="row">
-	{% include jumbotron.html %}
-	<br />
-	<div class="col-md-12">
+	<article class="col-md-12">
 		{{ content }}
-	</div>
+	</article>
 	<div class="col-md-12">
 		{% include disqus.html posturl=page.url posttitle=page.title %}
 	</div>

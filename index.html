@@ -3,10 +3,38 @@ layout: default
 type: page
 ---
 
-<br/>
-<br/>
-<ul class="col-md-12">
-		{% for post in site.posts %}
-			<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a> &raquo; <a href="{{ post.url }}#disqus_thread">comments</a> </li> 
-		{% endfor %}
+<div class="col-md-12">
+{% for post in paginator.posts %}
+	<div class="row">
+		<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+		<p>{{ post.date | date_to_string }} | by <a href="{{ post.email | prepend:'mailto:' }}">{{ post.author }}</a> | <a href="{{ post.url }}#disqus_thread">comments</a></p>
+		<p>{{ post.content }}</p>
+	</div>
+{% endfor %}
+</div>
+
+{% if paginator.total_pages > 1 %}
+<ul class="pagination">
+  {% if paginator.previous_page %}
+    <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a></li>
+  {% else %}
+    <li class="disabled"><span>&laquo; Prev</span></li>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <li class="active"><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }} <span class="sr-only">(current)</span></a></li>
+    {% elsif page == 1 %}
+      <li><a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
+    {% else %}
+      <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a></li>
+  {% else %}
+    <li class="disabled"><span>Next &raquo;</span></li>
+  {% endif %}
 </ul>
+{% endif %}
