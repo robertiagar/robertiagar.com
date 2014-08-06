@@ -4,7 +4,7 @@ type: page
 ---
 
 {% for category in site.categories %}
-  <h1 id="{{ category | first }}">{{ category | first }}</h1>
+  <h1 id="{{ category | first }}">{{ category | first }} <span class="badge">{{ category.last.size }}</span></h1>
   	<ul>
     	{% for posts in category %}
       		{% for post in posts %}
