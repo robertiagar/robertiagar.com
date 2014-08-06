@@ -1,7 +1,7 @@
 ---
 author: "Robert Iagar"
 baseurl: ""
-description: "Student. .NET Developer. Amateur Photographer. Welcome to my blog."
+description: "Student. .NET Developer. Amateur Photographer. Welcome to my blog!"
 email: robert.iagar@gmail.com
 github_username: robertiagar
 highlighter: pygments
@@ -10,6 +10,8 @@ permalink: none
 title: "Robert's Blog"
 twitter_username: robertiagar
 url: "http://www.robertiagar.com"
+paginate: 5
+paginate_path: "/page:num"
 defaults:
   -
    scope: 

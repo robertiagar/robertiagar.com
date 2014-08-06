@@ -1,3 +1,4 @@
+{% if page.type == post %}
 <div class="jumbotron">
 	<div class="container">
 		<div class="media">
@@ -6,7 +7,7 @@
 			</a>
 			<div class="media-body">
 				<h1>{{ page.title }} <small>in {{ page.category }}</small></h1>
-				<h2>By <a href="{{post.email | prepend: "mailto:"}}">{{ post.author }}</a> |{% if page.date %} {{ page.date | date_to_string}}{% endif %}</h2>
+				<h2>By <a href="{{page.email | prepend: "mailto:"}}">{{ page.author }}</a> |{% if page.date %} {{ page.date | date_to_string}}{% endif %} | <a href="{{ post.url }}#disqus_thread">comments</a></h2>
 				<p>
 					{% for tag in page.tags %}
 						<a href="#"><span class="badge">{{ tag }}</span></a>
@@ -16,3 +17,11 @@
 		</div>
 	</div>
 </div>
+{% else %}
+<div class="jumbotron">
+    <div class="container">
+        <h1>{{ site.title }}</h1>
+        <p>{{ site.description }}</p>
+    </div>
+</div>
+{% endif %}
