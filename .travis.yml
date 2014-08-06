@@ -14,7 +14,7 @@ install:
   # Install Jekyll and dependencies
   - bundle install
 
-script: bundle exec rake site:deploy --quiet
+script: jekyll build
 
 env:
   global:
