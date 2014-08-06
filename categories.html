@@ -1,0 +1,17 @@
+---
+layout: default
+type: page
+---
+
+{% for category in site.categories %}
+  <h1 id="{{ category | first }}">{{ category | first }}</h1>
+  	<ul>
+    	{% for posts in category %}
+      		{% for post in posts %}
+      			{% if post.title %}
+        		<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      			{% endif %}
+		    {% endfor %}
+    	{% endfor %}
+	</ul> 
+{% endfor %}
