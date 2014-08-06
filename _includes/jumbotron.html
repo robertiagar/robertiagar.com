@@ -1,15 +1,18 @@
-{% if page.type == type %}
-<div class="jumbotron jumbotron-large" data-background="{{ page.imageurl }}">
+<div class="jumbotron">
 	<div class="container">
-		<img class="img-circle" src="{{ page.authorimageurl }}"/>
-		<h1>{{ page.title }} <small>in {{ page.category }}</small></h1>
-		<h2>By <a href="{{post.email | prepend: "mailto:"}}">{{ post.author }}</a> |{% if page.date %} {{ page.date | date_to_string}}{% endif %}<h2>
-		<p>
-			{% for tag in page.tags %}
-				<a href="#"><span class="badge">{{ tag }}</span></a>
-			{% endfor %}
-		</p>
-		
+		<div class="media">
+			<a class="pull-left" href="#">
+				<img class="img-circle" src="{{ page.authorimageurl }}" class="pull-left"/>
+			</a>
+			<div class="media-body">
+				<h1>{{ page.title }} <small>in {{ page.category }}</small></h1>
+				<h2>By <a href="{{post.email | prepend: "mailto:"}}">{{ post.author }}</a> |{% if page.date %} {{ page.date | date_to_string}}{% endif %}</h2>
+				<p>
+					{% for tag in page.tags %}
+						<a href="#"><span class="badge">{{ tag }}</span></a>
+					{% endfor %}
+				</p>
+			</div>
+		</div>
 	</div>
 </div>
-{% endif %}
