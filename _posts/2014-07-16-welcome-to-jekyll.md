@@ -4,7 +4,6 @@ title:  "Welcome to Jekyll!"
 date: 2014-07-16 01:30:05
 category: jekyll
 tags: jekyll update
-imageurl: "/assets/images/bg_17.jpg"
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!

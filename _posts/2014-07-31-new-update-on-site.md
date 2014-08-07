@@ -4,7 +4,6 @@ title:  "New Update on Site!"
 date: 2014-07-31 00:52:00
 category: jekyll
 tags: jekyll update
-imageurl: "/assets/images/bg_18.jpg"
 ---
 
 Well then. Time for an update!
