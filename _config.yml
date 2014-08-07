@@ -22,3 +22,4 @@ defaults:
      author: "Robert Iagar"
      email: "robert.iagar@gmail.com"
      authorimageurl: "/assets/images/bg.jpg"
+     comments: true
