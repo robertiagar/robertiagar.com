@@ -2,7 +2,7 @@
 <div class="jumbotron">
     <div class="container">
     	<h1>{{ page.title }} <small>in <a href="{{ page.category | prepend: "/categories.html#" | prepend: site.url }}">{{ page.category }}</a></small></h1>
-		<h2>By <a href="{{page.email | prepend: "mailto:"}}">{{ page.author }}</a> |{% if page.date %} {{ page.date | date_to_string}}{% endif %} | <a href="{{ post.url }}#disqus_thread">comments</a></h2>
+		<h2>By <a href="{{page.email | prepend: "mailto:"}}">{{ page.author }}</a> |{% if page.date %} {{ page.date | date_to_string}}{% endif %} | <a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.path | split:'/' | last | cgi_escape }}">View Comments</a></h2>
 		<p>
 			{% for tag in page.tags %}
 				<a href="{{ tag | prepend: "/tags.html#" | prepend: site.url }}"><span class="badge">{{ tag }}</span></a>
