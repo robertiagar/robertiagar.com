@@ -3,7 +3,7 @@ title: "How I Manage My Blog"
 layout: post
 date: 2014-08-25 11:07:33
 category: jekyll
-tags: jekyll, update, how-to, git, powershell
+tags: jekyll update how-to git powershell
 ---
  
 Before I get into the details, I'm going to say on what I run [jekyll][jekyllrb] locally and then how I made small `powershell` script to manage my posts. Well, actually I wanted to handle the `YML` header generation.
