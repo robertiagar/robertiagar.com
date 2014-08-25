@@ -42,7 +42,7 @@ bundle exec jekyll build
 
 Once you've setup your project in Codeship, you're done with it, because it automatically pushes into the `commit status api` of [GitHub][statusapi]. This looks something like this:
 
-![A list of builds from commits into a merge request](/assets/images/posts/image02.png)
+![A list of builds from commits into a merge request](/assets/images/posts/image02.PNG)
 
 As you can see, I've had only one build failed. It automatically links back to codeship.io where you can view what went wrong.
 
