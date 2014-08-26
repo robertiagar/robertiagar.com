@@ -31,7 +31,7 @@ rvm use 2.1.0 --install
 bundle install
 bundle update
 export RAILS_ENV=test
-{% highlight %}
+{% endhighlight %}
 
 Use the following __Test Commands__
 {% highlight ruby %}
