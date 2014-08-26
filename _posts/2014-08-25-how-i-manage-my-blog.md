@@ -26,12 +26,12 @@ From there, create a new project:
 Select your repository.
 
 Use the following __Setup Commands__:
-{% highlight ruby %}
+```ruby
 rvm use 2.1.0 --install
 bundle install
 bundle update
 export RAILS_ENV=test
-{% endhighlight %}
+```
 
 Use the following __Test Commands__
 {% highlight ruby %}
