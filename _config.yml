@@ -6,7 +6,7 @@ description: "Student. .NET Developer. Amateur Photographer. Welcome to my blog!
 email: robert.iagar@gmail.com
 github_username: robertiagar
 highlighter: pygments
-markdown: kramdown
+markdown: redcarpet
 permalink: none
 title: "Robert's Blog"
 twitter_username: robertiagar
