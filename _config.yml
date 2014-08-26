@@ -7,6 +7,8 @@ email: robert.iagar@gmail.com
 github_username: robertiagar
 highlighter: pygments
 markdown: redcarpet
+redcarpet:
+  extensions: ["strikethrough"]
 permalink: none
 title: "Robert's Blog"
 twitter_username: robertiagar
