@@ -1,10 +1,10 @@
----
+﻿---
 layout: post
 title: back in time...
 date: 2012-04-02 14:00
-author: robertiagar
+author: "Robert Iagar"
 comments: true
-categories: [Day to day, Life]
+tags: [Day to day, Life]
 ---
 last night i found something interesting, something that really impressed me.
 

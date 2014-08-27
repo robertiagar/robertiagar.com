@@ -1,10 +1,10 @@
----
+﻿---
 layout: post
 title: blood sugar
 date: 2012-03-29 09:00
-author: robertiagar
+author: "Robert Iagar"
 comments: true
-categories: [Day to day, Life, Philosophic]
+tags: [Day to day, Life, Philosophic]
 ---
 as ths sugar rushes through my blood, the drop is approaching and then it hits... all of the sugar gets synthesized and instantly converted into energy. this is only temporary. my mind feels it, my body doesn't. it's too tired to...
 

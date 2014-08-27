@@ -1,10 +1,10 @@
----
+﻿---
 layout: post
 title: Krewella - Killin' It
 date: 2012-02-19 20:56
-author: robertiagar
+author: "Robert Iagar"
 comments: true
-categories: [Day to day]
+tags: [Day to day]
 ---
 [soundcloud url="http://api.soundcloud.com/tracks/34041068" iframe="true" /]
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: "How I Manage My Blog"
 layout: post
 date: 2014-08-25 11:07:33

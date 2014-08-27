@@ -1,10 +1,10 @@
----
+﻿---
 layout: post
 title: ce sfarsit de mini-vacanta...
 date: 2012-02-05 10:00
-author: robertiagar
+author: "Robert Iagar"
 comments: true
-categories: [Day to day, Life]
+tags: [Day to day, Life]
 ---
 iar s-a-ntamplat. iar am facut entorsa la genunchi. genunchiul stang. nu mai stiu la care am patit-o ultima data. nu prea conteaza... s-a-ntamplat in ultima zi in care am fost la munte. vroiam sa mergem la schi...
 

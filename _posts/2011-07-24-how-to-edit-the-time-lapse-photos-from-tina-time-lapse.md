@@ -1,10 +1,10 @@
----
+﻿---
 layout: post
 title: How to edit the time-lapse photos from Tina Time-lapse
 date: 2011-07-24 15:00
-author: robertiagar
+author: "Robert Iagar"
 comments: true
-categories: [Android, android, Graphics, how to, time-lapse, tina time-lapse, windows live movie maker]
+tags: [Android, android, Graphics, how to, time-lapse, tina time-lapse, windows live movie maker]
 ---
 If you came here from my post on Android.Appstorm then you already know how to make a time-lapse video and you already have your files from Tina Time-lapse.
 
