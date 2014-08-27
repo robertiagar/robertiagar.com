@@ -21,7 +21,11 @@ type: page
     <li class="disabled"><span>&laquo; Prev</span></li>
   {% endif %}
 
-  {% for page in (1..paginator.total_pages) %}
+  {% assign current_last_page = (paginator.page + 9) %}
+  {% if current_last_page > paginator.total_pages %}
+	{% assign current_last_page = paginator.total_pages %}
+  {% endif %}
+  {% for page in (paginator.page..current_last_page) %}
     {% if page == paginator.page %}
       <li class="active"><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }} <span class="sr-only">(current)</span></a></li>
     {% elsif page == 1 %}
