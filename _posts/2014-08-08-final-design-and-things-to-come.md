@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title:  "Final Design and Things to Come"
 date: 2014-08-08 00:30

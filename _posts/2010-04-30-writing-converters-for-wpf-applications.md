@@ -1,10 +1,10 @@
----
+﻿---
 layout: post
 title: Writing Converters for WPF applications
 date: 2010-04-30 10:09
-author: robertiagar
+author: "Robert Iagar"
 comments: true
-categories: [WPF]
+tags: [WPF]
 ---
 I’m currently writing my own Twitter client (yes, I know, another Twitter client will hit the market. Whoopee!) and I had to create a converter that turns a regular string to some kind of a rich text box with link’s and that kind of stuff. The algorithm is in my head just need to implement. That would be my greatest achievement yet. But let’s not go adrift from the subject. Writing your own converter for your app.
 

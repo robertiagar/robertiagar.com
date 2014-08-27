@@ -1,9 +1,9 @@
----
+﻿---
 layout: post
 title: Summoner's Call by LeagueofLegends
 date: 2013-08-23 11:49
-author: robertiagar
+author: "Robert Iagar"
 comments: true
-categories: [IFTTT, SoundCloud]
+tags: [IFTTT, SoundCloud]
 ---
 <div><br /><br /><br /><br />All official League of Legends music available for download!</div>

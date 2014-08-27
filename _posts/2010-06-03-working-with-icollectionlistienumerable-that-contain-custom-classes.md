@@ -1,10 +1,10 @@
----
+﻿---
 layout: post
 title: Working with ICollection/List/IEnumerable that contain custom classes
 date: 2010-06-03 23:37
-author: robertiagar
+author: "Robert Iagar"
 comments: true
-categories: [.NET General, C#]
+tags: [.NET General, C#]
 ---
 Again, about my <a href="http://xbladegraphix.co.cc/TwitBy">Twitter Client</a>. I’ve made a custom class show the tweet and then a ICollection for the public property of the Tweets in the TwitterViewModel.
 

@@ -1,9 +1,9 @@
----
+﻿---
 layout: post
 title: Some great music
 date: 2013-04-12 20:54
-author: robertiagar
+author: "Robert Iagar"
 comments: true
-categories: [Uncategorized]
+tags: [Uncategorized]
 ---
 Here's some great music from 7 Minutes Dead:

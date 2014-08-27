@@ -1,10 +1,10 @@
----
+﻿---
 layout: post
 title: amintiri placute...
 date: 2012-01-16 11:00
-author: robertiagar
+author: "Robert Iagar"
 comments: true
-categories: [Day to day, Life]
+tags: [Day to day, Life]
 ---
 azi au venit prietenii mei la mine. nu i-am mai vazut de la revelion. au adus si niste poze. poze de cand eram ceva mai mici. varsta medie din anturajul nostru e de aproximativ 20. nu pot sa spun ca eram tineri. inca suntem.
 
