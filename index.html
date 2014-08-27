@@ -22,8 +22,8 @@ type: page
   {% endif %}
 
   {% assign current_last_page = {{9 | plus: paginator.page}} %}
-  {% if current_last_page > paginator.total_posts %}
-	{% assign current_last_page = paginator.total_posts %}
+  {% if current_last_page > paginator.total_pages %}
+	{% assign current_last_page = paginator.total_pages %}
   {% endif %}
   {% for page in (paginator.page..current_last_page) %}
     {% if page == paginator.page %}
