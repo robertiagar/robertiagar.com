@@ -21,7 +21,7 @@ type: page
     <li class="disabled"><span>&laquo; Prev</span></li>
   {% endif %}
 
-  {% capture current_last_page %} {{paginator.page | add: 9}} {% endcapture %}
+  {% assign current_last_page %} {{paginator.page | plus: 9}} {% endassign %}
   {% if current_last_page > paginator.total_pages %}
 	{% assign current_last_page = paginator.total_pages %}
   {% endif %}
