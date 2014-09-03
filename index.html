@@ -20,7 +20,7 @@ type: page
   {% else %}
     <li class="previous disabled"><span>&laquo; Older</span></li>
   {% endif %}
-    <li><em>Page {{ paginator.page }} of {{ paginator.total_pages }}</em></li>
+    
   {% if paginator.next_page %}
     <li class="next"><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Newer &raquo;</a></li>
   {% else %}
