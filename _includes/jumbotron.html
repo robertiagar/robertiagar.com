@@ -12,16 +12,12 @@
 </div>
 {% else %}
 <div class="jumbotron">
-	<div class="container">
-		<div class="media">
-			<a class="pull-left" href="#">
-				<img class="img-circle" src="{{ site.authorimageurl }}" class="pull-left"/>
-			</a>
-			<div class="media-body">
-				 <h1>{{ site.title }}</h1>
-        		<p>{{ site.description }}</p>
-			</div>
-		</div>
+	<div class="container">		
+		<!-- <img class="img-circle img-center" src="{{ site.authorimageurl }}" /> -->
+		<p>
+			<h1>{{ site.title }}</h1>
+			<p>{{ site.description }}</p>
+		</p>
 	</div>
 </div>
 {% endif %}
