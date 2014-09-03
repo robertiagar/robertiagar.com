@@ -14,31 +14,17 @@ type: page
 </div>
 
 {% if paginator.total_pages > 1 %}
-<ul class="pagination">
+<ul class="pager">
   {% if paginator.previous_page %}
-    <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a></li>
+    <li class="previous"><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Older</a></li>
   {% else %}
-    <li class="disabled"><span>&laquo; Prev</span></li>
+    <li class="previous disabled"><span>&laquo; Older</span></li>
   {% endif %}
-
-  {% assign current_last_page = paginator.page | plus:9 %}
-  {% if current_last_page > paginator.total_pages %}
-	{% assign current_last_page = paginator.total_pages %}
-  {% endif %}
-  {% for page in (paginator.page..current_last_page) %}
-    {% if page == paginator.page %}
-      <li class="active"><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }} <span class="sr-only">(current)</span></a></li>
-    {% elsif page == 1 %}
-      <li><a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
-    {% else %}
-      <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
-    {% endif %}
-  {% endfor %}
-
+    <li><em>Page {{ paginator.page }} of {{ paginator.total_pages }}</em></li>
   {% if paginator.next_page %}
-    <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a></li>
+    <li class="next"><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Newer &raquo;</a></li>
   {% else %}
-    <li class="disabled"><span>Next &raquo;</span></li>
+    <li class="next disabled"><span>Newer &raquo;</span></li>
   {% endif %}
 </ul>
 {% endif %}
