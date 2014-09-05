@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <div class="row">
 	<article class="col-md-9">
 		{{ content }}
@@ -18,11 +19,13 @@ layout: default
 		</script>
 	</div>
 </div>
+
 <div class="row">
 	<div class="col-md-9">
 		{% include disqus.html posturl=page.url posttitle=page.title %}
 	</div>
 </div>
+
 <div class="row">
 	<div class="col-md-9">
 		{% include previous-next-links.html %}
