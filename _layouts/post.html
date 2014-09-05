@@ -1,16 +1,19 @@
 ---
 layout: default
 ---
+
 <div class="row">
 	<article class="col-md-12">
 		{{ content }}
 	</article>
 </div>
+
 <div class="row">
 	<div class="col-md-12">
 		{% include disqus.html posturl=page.url posttitle=page.title %}
 	</div>
 </div>
+
 <div class="row">
 	<div class="col-md-12">
 		{% include previous-next-links.html %}
