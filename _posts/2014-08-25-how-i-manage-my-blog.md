@@ -2,10 +2,9 @@
 title: "How I Manage My Blog"
 layout: post
 date: 2014-08-25 11:07:33
-category: jekyll
-tags: jekyll update how-to git powershell
+categories: [jekyll, update, how-to, git, powershell]
 ---
- 
+
 Before I get into the details, I'm going to say on what I run [jekyll][jekyllrb] locally and then how I made small `powershell` script to manage my posts. Well, actually I wanted to handle the `YML` header generation.
 
 ### My setup
@@ -52,8 +51,8 @@ Notice: for 10x faster LSI support, please install http://rb-gsl.rubyforge.org/
 Configuration file: /home/rof/src/github.com/robertiagar/robertiagar-website/_config.yml
 Source: /home/rof/src/github.com/robertiagar/robertiagar-website
 Destination: /home/rof/src/github.com/robertiagar/robertiagar-website/_site
-Generating... 
-Error reading file /home/rof/src/github.com/robertiagar/robertiagar-website/_posts/2014-08-25-how-i-manage-my-blog.md: invalid byte sequence in UTF-8 
+Generating...
+Error reading file /home/rof/src/github.com/robertiagar/robertiagar-website/_posts/2014-08-25-how-i-manage-my-blog.md: invalid byte sequence in UTF-8
   Liquid Exception: invalid byte sequence in UTF-8 in _posts/2014-08-25-how-i-manage-my-blog.md/#excerpt
 jekyll 2.2.0 | Error:  invalid byte sequence in UTF-8
 {% endhighlight %}
@@ -64,7 +63,7 @@ Apparently when I was testing out my new post generator I forgot to `UTF-8` enco
 
 When using jekyll, each post must have `YAML Front Matter`. It's a sort of header that tells jekyll some basic information like title, date-posted, categories, tags (or any other information you want to embed into your post). The fact that I need to give `yyyy-MM-dd-title.md` filename, having to manually write the `Front Matter` was a bit of pain &mdash; granted, I have a few posts, for now, but I knew it would turn out to be a pain later on.
 
-So I put my developer hardhat on and started figuring something out. 
+So I put my developer hardhat on and started figuring something out.
 
 Knowing C# I thought that a simple Console app with a few arguments would do the trick. Making it was pretty easy. In a few minutes I've got a working prototype, but then I thought:
 
@@ -99,4 +98,4 @@ Cheers!
 [libgit2]:         https://github.com/libgit2/libgit2sharp
 [poshgit]:         https://github.com/dahlbyk/posh-git
 [haacked]:         http://haacked.com
-[jekyll-new-post]: https://github.com/robertiagar/jekyll-new-post 
+[jekyll-new-post]: https://github.com/robertiagar/jekyll-new-post
