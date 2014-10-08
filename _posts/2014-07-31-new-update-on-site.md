@@ -2,8 +2,7 @@
 layout: post
 title:  "New Update on Site!"
 date: 2014-07-31 00:52:00
-category: jekyll
-tags: jekyll update
+categories: [jekyll, update]
 ---
 
 Well then. Time for an update!

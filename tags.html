@@ -4,7 +4,7 @@ type: page
 ---
 
 {% for tag in site.tags %}
-  <h1 id="{{ tag | first }}">{{ tag | first }} <span class="badge">{{ tag.last.size }}</span></h1>
+  <h1 id="{{ category | first }}">{{ tag | first }} <span class="badge">{{ tag.last.size }}</span></h1>
   	<ul>
     	{% for posts in tag %}
       		{% for post in posts %}
@@ -13,5 +13,5 @@ type: page
       			{% endif %}
 		    {% endfor %}
     	{% endfor %}
-	</ul> 
+	</ul>
 {% endfor %}
