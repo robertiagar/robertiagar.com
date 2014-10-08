@@ -3,10 +3,10 @@ layout: default
 type: page
 ---
 
-{% for tag in site.tags %}
-  <h1 id="{{ category | first }}">{{ tag | first }} <span class="badge">{{ tag.last.size }}</span></h1>
+{% for category in site.categories %}
+  <h1 id="{{ category | first }}">{{ category | first }} <span class="badge">{{ category.last.size }}</span></h1>
   	<ul>
-    	{% for posts in tag %}
+    	{% for posts in category %}
       		{% for post in posts %}
       			{% if post.title %}
         		<li><a href="{{ post.url }}">{{ post.title }}</a></li>

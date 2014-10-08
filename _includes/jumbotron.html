@@ -4,8 +4,8 @@
     	<h1>{{ page.title }}</h1>
 		<h2>By <a href="{{page.email | prepend: "mailto:"}}">{{ page.author }}</a> |{% if page.date %} {{ page.date | date_to_long_string}}{% endif %} | <a href="{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.path | split:'/' | last | cgi_escape }}">View Comments</a></h2>
 		<p>
-			{% for tag in page.tags %}
-				<a href="{{ tag | prepend: "/categories.html#" | prepend: site.url }}"><span class="badge">{{ tag }}</span></a>
+			{% for category in page.categories %}
+				<a href="{{ category | prepend: "/categories.html#" | prepend: site.url }}"><span class="badge">{{ category }}</span></a>
 			{% endfor %}
 		</p>
     </div>
