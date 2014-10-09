@@ -7,6 +7,18 @@ html {
     height: 100%;
 }
 
+article:first-child:first-letter {
+  float: left;
+  color: #2780e3;
+  font-size: 75px;
+  line-height: 60px;
+  padding-right: 8px;
+}
+
+#tester{
+  display: none;
+}
+
 /* Set padding to keep content from hitting the edges */
 #Message {
     max-width: 100%;
@@ -56,7 +68,7 @@ input[type="checkbox"].input-validation-error {
 }
 
 .blog-post {
-    
+
     width: 100%;
     text-align: center;
     -moz-background-size: cover;

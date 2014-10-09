@@ -3,30 +3,35 @@ layout: default
 type: page
 ---
 
-<div class="col-md-12">
-{% for post in paginator.posts %}
-	<div class="row">
-		<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-		<p>{{ post.date | date_to_long_string }} | by <a href="{{ post.email | prepend:'mailto:' }}">{{ post.author }}</a> | <a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.path | split:'/' | last | cgi_escape }}">View Comments</a></p>
-		<p>{{ post.content }}</p>
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+	{% for post in paginator.posts %}
+		<div class="row">
+			<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+			<p>{{ post.date | date_to_long_string }} | by <a href="{{ post.email | prepend:'mailto:' }}">{{ post.author }}</a> | <a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.path | split:'/' | last | cgi_escape }}">View Comments</a></p>
+			<article>{{ post.content }}</article>
+			<hr>
+		</div>
+	{% endfor %}
 	</div>
-{% endfor %}
 </div>
 
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-	{% if paginator.previous_page %}
-		<li class="previous"><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Older</a></li>
-	{% else %}
-		<li class="previous disabled"><span>&laquo; Older</span></li>
-	{% endif %}
+<div class="row">
+	{% if paginator.total_pages > 1 %}
+	<ul class="pager">
+		{% if paginator.next_page %}
+			<li class="next"><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older &raquo;</a></li>
+		{% else %}
+			<li class="next disabled"><span>Older &raquo;</span></li>
+		{% endif %}
 
 		<li><em>Page {{ paginator.page }} of {{ paginator.total_pages }}</em></li>
 
-	{% if paginator.next_page %}
-		<li class="next"><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Newer &raquo;</a></li>
-	{% else %}
-		<li class="next disabled"><span>Newer &raquo;</span></li>
+		{% if paginator.previous_page %}
+			<li class="previous"><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Newer</a></li>
+		{% else %}
+			<li class="previous disabled"><span>&laquo; Newer</span></li>
+		{% endif %}
+	</ul>
 	{% endif %}
-</ul>
-{% endif %}
+</div>
