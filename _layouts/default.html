@@ -3,16 +3,25 @@
   {% include head.html %}
     <body>
     {% include header.html %}
-    <div class="container">
+    <div class="container" role="main">
       {{ content }}
-      {% include footer.html %} 
+      {% include footer.html %}
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/advertisement.js"></script>
     {% include disqus-count.html %}
-	{% include google-analytics.html %}
-	{% include responsive-images.html %}
+	  {% include google-analytics.html %}
+	  {% include responsive-images.html %}
+    <script type="text/javascript">
+      $(document).ready(function(){
+        if(document.getElementById("tester") == undefined)
+        {
+          var $disableAdBlock = $('<div class="panel panel-danger">  <div class="panel-heading">    <h3 class="panel-title">AdBlock Detected!</h3>  </div>  <div class="panel-body">Please support me by disabling AdBlock. Thank you!</div></div>');        $("#ad").append($disableAdBlock);
+        }
+      });
+    </script>
     </body>
 </html>

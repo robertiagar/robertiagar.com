@@ -18,7 +18,7 @@ You can find the source code for Twitter Bootstrap at [github.com/twbs/bootstrap
 Enjoy!
 
 <div class="row">
-  <div class="col-md-12">
+  <div class="col-md-12" id="ad">
     {% include google-ads.html %}
   </div>
 <div>

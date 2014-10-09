@@ -3,32 +3,32 @@ layout: default
 ---
 
 <div class="row">
-	<article class="col-md-9">
+	<article class="col-md-8 col-md-offset-2">
 		{{ content }}
 	</article>
-	<div class="col-md-3">
+	<div class="col-md-2" id="ad">
 		{% include google-ads.html %}
 	</div>
 </div>
 
-{% include hr-9.html %}
+{% include hr-12.html %}
 
 <div class="row">
-	<div class="col-md-9">
+	<div class="col-md-8 col-md-offset-2">
 		{% include related.html %}
 	</div>
 </div>
 
 <div class="row">
-	<div class="col-md-9">
+	<div class="col-md-8 col-md-offset-2">
 		{% include previous-next-links.html %}
 	</div>
 </div>
 
-{% include hr-9.html %}
+{% include hr-12.html %}
 
 <div class="row">
-	<div class="col-md-9">
+	<div class="col-md-8 col-md-offset-2">
 		{% include disqus.html posturl=page.url posttitle=page.title %}
 	</div>
 </div>
