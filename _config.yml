@@ -9,7 +9,7 @@ highlighter: pygments
 markdown: redcarpet
 redcarpet:
   extensions: ["strikethrough"]
-permalink: none
+permalink: /:year/:month/:day/:title/
 title: "Robert's Blog"
 twitter_username: robertiagar
 url: "http://www.robertiagar.com"
