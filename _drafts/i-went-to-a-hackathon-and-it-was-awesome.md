@@ -23,3 +23,6 @@ I'll write a full blog post on it later.
 Well then, I haven't one any prizes this time, but I did had a good time and I'll certainly be coming back next year. If there are hackathons organized in or around your area, you should definately check them out. They're awesome.
 
 Until next time!
+
+[hacktm.ro]: http://hacktm.ro/
+[500px.com]: http://500px.com/RobertIagar
