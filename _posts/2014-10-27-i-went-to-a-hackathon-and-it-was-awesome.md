@@ -1,7 +1,7 @@
 ---
 title: "I went to a hackathon and it was awesome!"
 layout: post
-date: 2014-11-27 22:30:00
+date: 2014-10-27 22:30:00
 categories: [hackathon, hacktm, life, day to day]
 ---
 
