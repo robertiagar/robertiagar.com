@@ -1,11 +1,11 @@
 ---
 title: "I went to a hackathon and it was awesome!"
 layout: post
-date: 2014-11-21 22:10:00
+date: 2014-11-27 22:30:00
 categories: [hackathon, hacktm, life, day to day]
 ---
 
-This past weekend I've been to a Hackathon here in Timisoara. It was called HackTM and it was the first edition. It was supposed to be a 48 hour hackathon, but due to some logistic problems it turned into 32 hours. It was organized by various people from the tech scene here and sponsors were major tech companies. I'm not going to list them all here, I'm hear to talk about my experience there. If you want more details head over to their [website][hacktm.ro].
+In the weekend of 17-19 of October I've been to a Hackathon here in Timisoara. It was called HackTM and it was the first edition. It was supposed to be a 48 hour hackathon, but due to some logistic problems it turned into 32 hours. It was organized by various people from the tech scene here and sponsors were major tech companies. I'm not going to list them all here, I'm hear to talk about my experience there. If you want more details head over to their [website][hacktm.ro].
 
 ###The atmosphere
 I was nice to see that so many developers have come to try and build something useful to them, the community or just wanted to learn something. The projects included: robots, home automation systems, health systems, apps that used open-data and many more. Even though the were prizes involved, when someone was in a pickle others from different teams tried to help out. That's what I like about these events. You get together and even though you try and win, it's ultimately about meeting new people, learning new things and socializing.
