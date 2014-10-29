@@ -16,7 +16,7 @@ Luckily there are a lot of Android Emulators out there, [Andy][andy] being the f
 Now I can use the [web app][inbox] whenever I want. It's using the [Material Design Guidelines][material] and to be honest it's pretty good looking. I'll be using it as my Gmail replacement in the coming weeks and I'll give a full review after I've seen what it's capable of.
 
 Here's a screenshot of the app:
-![Inbox in it's full glory](/assets/images/posts/image03.PNG)
+![Inbox in it's full glory](/assets/images/posts/image03.png)
 
 [gmail]: 		http://gmail.com
 [yahoo]: 		http://yahoo.com
