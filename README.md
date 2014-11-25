@@ -9,3 +9,7 @@ robertiagar-website
 [![Stories in Ready](https://badge.waffle.io/robertiagar/robertiagar-website.png?label=ready&title=Ready)](http://waffle.io/robertiagar/robertiagar-website)
 
 Well then. This is my personal site. Everything in the `_posts` folder is my own work. The rest, you can fork. :)
+
+- [ ] item one
+- [ ] item two
+  - [ ] subitem one
