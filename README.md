@@ -10,6 +10,3 @@ robertiagar-website
 
 Well then. This is my personal site. Everything in the `_posts` folder is my own work. The rest, you can fork. :)
 
-- [ ] item one
-- [x] item two
-  - [ ] subitem one
