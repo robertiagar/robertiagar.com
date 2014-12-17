@@ -15,6 +15,10 @@ twitter_username: robertiagar
 url: "http://www.robertiagar.com"
 paginate: 5
 paginate_path: "/page:num"
+timezone: Europe/Bucharest
+gems:
+  - jemoji
+  - jekyll-mentions
 defaults:
   -
    scope:
