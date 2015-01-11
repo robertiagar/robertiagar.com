@@ -18,6 +18,11 @@ paginate_path: "/page:num"
 collections:
    project365:
       output: false
+timezone: Europe/Bucharest
+gems:
+  - jemoji
+  - jekyll-mentions
+  - jekyll-sitemap
 defaults:
   -
    scope:
