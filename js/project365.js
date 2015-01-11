@@ -11,5 +11,5 @@ $(document).ready(function(){
       });
     });
    
-   $.adaptiveBackground.run();
+   $.adaptiveBackground.run({normalizeTextColor:true});
 });
