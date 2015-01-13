@@ -15,6 +15,9 @@ twitter_username: robertiagar
 url: "http://www.robertiagar.com"
 paginate: 5
 paginate_path: "/page:num"
+collections:
+   project365:
+      output: false
 timezone: Europe/Bucharest
 gems:
   - jemoji

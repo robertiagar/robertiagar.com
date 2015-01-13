@@ -82,6 +82,10 @@ input[type="checkbox"].input-validation-error {
         background: #ffffff;
         background: rgba(255, 255, 255, 0.9);
     }
+	
+.jumbotron-365 {
+	margin-bottom: 0px;
+}
 
 .jumbotron-large {
     height: 100%;
