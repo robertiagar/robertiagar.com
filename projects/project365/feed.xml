@@ -1,0 +1,28 @@
+---
+layout: none
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+    <title>Project 365</title>
+    <description>One pic for every day of the year.</description>
+    <link>{{site.baseurl}}/projects/project365/</link>
+    <atom:link href="{{ "/projects/project365/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml" />
+    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <generator>Jekyll v{{ jekyll.version }}</generator>
+    {% for image in site.project365 %}
+      <item>
+        <title>{{ photo.name | xml_escape }}</title>
+        <description>{{ photo.description | xml_escape }}</description>
+        <pubDate>{{ photo.date | date_to_rfc822 }}</pubDate>
+        <link>{{ photo.url | prepend: '/assets/images/project365/' }}</link>
+        <guid isPermaLink="true">{{ photo.url | prepend: site.baseurl | prepend: site.url }}</guid>
+		<enclosure url="{{ photo.img-name | prepend: '/assets/images/project365/' }}" type="image/jpeg" />
+        {% for tag in photo.tags %}
+        <category>{{ tag | xml_escape }}</category>
+        {% endfor %}
+      </item>
+    {% endfor %}
+  </channel>
+</rss
