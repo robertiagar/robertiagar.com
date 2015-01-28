@@ -6,7 +6,7 @@ robertiagar-website
 
 [![Issue Stats](http://issuestats.com/github/robertiagar/robertiagar-website/badge/issue)](http://issuestats.com/github/robertiagar/robertiagar-website)
 
-[![Stories in Ready](https://badge.waffle.io/robertiagar/robertiagar-website.png?label=ready&title=Ready)](http://waffle.io/robertiagar/robertiagar-website)
+[![Stories in Ready](https://badge.waffle.io/robertiagar/robertiagar.com.svg?label=ready&title=Ready)](http://waffle.io/robertiagar/robertiagar.com)
 
 Well then. This is my personal site. Everything in the `_posts` folder is my own work. The rest, you can fork. :)
 
