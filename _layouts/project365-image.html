@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+    <body>
+    {% include header.html %}
+    
+	<div class="jumbotron jumbotron-365" data-ab-css-background>
+		<div class="container">
+			<img class="img img-center" src="{{ page.img-name | prepend: '/assets/images/project365/' }}" data-adaptive-background='1'height="320"/>
+			<p>
+				<h1>{{ page.name }}</h1>
+				<p>{{ page.edited-in }}</p>
+			</p>
+		</div>
+	</div>
+
+	<div class="container" role="main">
+      {% include footer.html %}
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/advertisement.js"></script>
+	<script src="/js/jquery.adaptive-backgrounds.js"></script>
+	<script src="/js/project365.js"></script>
+    {% include disqus-count.html %}
+	  {% include google-analytics.html %}
+	  {% include responsive-images.html %}
+    <script type="text/javascript">
+      $(document).ready(function(){
+        if(document.getElementById("tester") == undefined)
+        {
+          var $disableAdBlock = $('<div class="panel panel-danger">  <div class="panel-heading">    <h3 class="panel-title">AdBlock Detected!</h3>  </div>  <div class="panel-body">Please support me by disabling AdBlock. Thank you!</div></div>');        $("#ad").append($disableAdBlock);
+        }
+      });
+    </script>
+    </body>
+</html>

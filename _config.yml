@@ -17,7 +17,8 @@ paginate: 5
 paginate_path: "/page:num"
 collections:
    project365:
-      output: false
+      output: true
+      permalink: /projects/project365/:path/
 timezone: Europe/Bucharest
 gems:
   - jemoji
