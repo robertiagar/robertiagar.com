@@ -18,7 +18,7 @@
               <div class="author-image" style="background-image: url({{ site.author_image }})">Blog Logo</div>
               <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ site.author }}</h4>
               on
-              <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time>
+              <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time> | <a href="{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.path | split:'/' | last | cgi_escape }}">View Comments</a>
               <!-- , tagged on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}} -->
             </div>
             <div style="text-align:center">
@@ -34,7 +34,7 @@
               <div class="author-image" style="background-image: url({{ site.author_image }})">Blog Logo</div>
               <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ page.author }}</h4>
               on
-              <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time>
+              <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time> | <a href="{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.path | split:'/' | last | cgi_escape }}">View Comments</a>
               <!-- , tagged on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}} -->
             </div>
           </div>
@@ -85,6 +85,9 @@
             </footer>
           </div>
         </div>
+		<div class="bottom-teaser cf">
+			{% include disqus.html posturl=page.url posttitle=page.title %}
+		</div>
       </article>
     </main>
     <div class="bottom-closer">
