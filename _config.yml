@@ -54,6 +54,13 @@ social:
     share_title:
     share_link:
 
+ - icon:	picture-o
+    url:	https://500px.com/robertiagar
+    desc:	Check out my photographs
+    share_url:
+    share_title:
+    share_link:
+
 #  - icon:	google-plus
 #    url:	https://google.com/???
 #    desc:	Add me on google+
