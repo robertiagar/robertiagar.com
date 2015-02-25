@@ -27,7 +27,7 @@ collections:
    project31:
       output: true
       permalink: /projects/project31/:path/
-      name: Project 31
+      name: "Project 31"
       description: >
          This started out as photography project to improve my photography. I wanted to take a picture each day of the year 2015. I've only made it to 31 days out of 365. Much more than I anticipated.
 

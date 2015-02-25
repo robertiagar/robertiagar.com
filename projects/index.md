@@ -12,4 +12,5 @@ Enjoy:
 {% for project in site.collections %}
 *  {{ project.name }}
    {{ project.description }}
+   {{ project }}
 {% endfor %}
