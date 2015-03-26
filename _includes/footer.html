@@ -1,10 +1,11 @@
-{% include hr-12.html %}
-<div class="row" role="contentinfo">
-	<footer class="col-md-10">
-  		<p>Built with <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/robertiagar">@robertiagar</a>.</p>
-  		<p>&copy; 2015 - Robert Iagar
-  		<p>
-		    <a href="#">Back to top</a>
-	  	</p>
-	</footer>
-</div>
+<!-- footer start -->
+
+<footer class="site-footer">
+  <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}"> <span class="tooltip"> <i class="fa fa-rss"></i> Subscribe!</span></a>
+    <div class="inner">
+         <section class="copyright">All content copyright <a href="mailto:{{ site.email}}">{{ site.name }}</a> &copy; {{ site.time | date: '%Y' }} &bull; All rights reserved.</section>
+         <section class="poweredby">Made with <a href="http://jekyllrb.com"> Jekyll</a></section>
+    </div>
+</footer>
+
+<!-- footer end -->

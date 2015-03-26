@@ -1,29 +1,83 @@
----
-author: "Robert Iagar"
-authorimageurl: "/assets/images/bg.jpg"
-baseurl: ""
-description: "Student. .NET Developer. Amateur Photographer. Welcome to my blog!"
-email: robert.iagar@gmail.com
-github_username: robertiagar
-highlighter: pygments
+# Build settings
 markdown: redcarpet
 redcarpet:
   extensions: ["strikethrough"]
+highlighter: pygments
 permalink: /:year/:month/:day/:title/
+
+# Site settings
 title: "Robert's Blog"
-twitter_username: robertiagar
-url: "http://www.robertiagar.com"
-paginate: 5
+description: > # this means to ignore newlines until "email:"
+   Student. .NET Developer. Amateur Photographer. Welcome to my blog!
+
+email: "robert.iagar@gmail.com"
+#blog logo
+logo: "/assets/images/bg.jpg"
+# blog cover
+cover: "/assets/images/cover.jpg"
+
+name: 'Robert Iagar'
+author: 'Robert Iagar'
+author_image: "/assets/images/bg.jpg"
+
+paginate:	5
 paginate_path: "/page:num"
+
 collections:
-   project365:
+   project31:
       output: true
-      permalink: /projects/project365/:path/
-timezone: Europe/Bucharest
-gems:
-  - jemoji
-  - jekyll-mentions
-  - jekyll-sitemap
+      permalink: /projects/project31/:path/
+      name: "Project 31"
+      description: >
+         This started out as photography project to improve my photography. I wanted to take a picture each day of the year 2015. I've only made it to 31 days out of 365. Much more than I anticipated.
+
+url: "http://www.robertiagar.com" # the base hostname & protocol for your site
+baseurl: ""
+
+# social icons and sharing options
+social:
+  - icon:	twitter
+    url:	https://twitter.com/robertiagar
+    desc: Follow me on twitter
+    share_url: http://twitter.com/share
+    share_title: ?text=
+    share_link: "&amp;url="
+
+#  - icon:	facebook
+#    url:	https://facebook.com/???
+#    desc: Connect with me facebook
+#    share_url: //www.facebook.com/sharer.php
+#    share_title: ?t=
+#    share_link: "&amp;u="
+
+  - icon:	github
+    url:	https://github.com/robertiagar
+    desc:	Fork me on github
+    share_url:
+    share_title:
+    share_link:
+
+  - icon:	picture-o
+    url:	https://500px.com/robertiagar
+    desc:	Check out my photographs
+    share_url:
+    share_title:
+    share_link:
+
+  - icon:	btc
+    url:	http://sendcoins.to/robertiagar
+    desc:	Send me some bitcoins
+    share_url:
+    share_title:
+    share_link:
+
+#  - icon:	google-plus
+#    url:	https://google.com/???
+#    desc:	Add me on google+
+#    share_url:
+#    share_title:
+#    share_link:
+
 defaults:
   -
    scope:
