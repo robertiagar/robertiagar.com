@@ -9,7 +9,7 @@
       <article class="post">
         {% if page.image %}
         <div class="article-image">
-          <div class="post-image-image" style="background-image: url({% if page.image %}{{ page.image }}{% endif %})" data-adaptive-background='1' data-ab-css-background='1'>
+          <div class="post-image-image" style="background-image: url({% if page.image %}{{ page.image }}{% endif %})">
             Article Image
           </div>
           <div class="post-meta">
@@ -101,6 +101,5 @@
       </div>
     </div>
     {% include javascripts.html %}
-	{% include adapaptive-background.html %}
   </body>
 </html>
