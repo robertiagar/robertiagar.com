@@ -13,12 +13,8 @@ projects:
 ---
 
 <p>Here you'll find some of my projects that I've been (or currently) working on.</p>
-
 <p>Enjoy:</p>
-
 {% for project in page.projects %}
-	
 	<h2><a href="{{ project.permalink }}">{{ project.name }}</a></h2>
 	<p>{{ project.description }}</p>
-	
 {% endfor %}

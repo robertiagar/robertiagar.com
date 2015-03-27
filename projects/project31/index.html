@@ -1,28 +1,29 @@
 ---
-layout: page
+layout: project31
 type: page
+title: Project 31
+description: >
+       This started out as photography project to improve my photography. I wanted to take a picture each day of the year 2015. I've only made it to 31 days out of 365. Much more than I anticipated.
 ---
-
-{% for photo in site.project31 %}
-<div class="jumbotron jumbotron-365" data-ab-css-background>
-	<div class="container">
-		<img class="img img-center" src="{{ photo.img-name | prepend: '/assets/images/project31/' }}" data-adaptive-background='1'height="320"/>
+<div  id="container">
+	<div class="item">
 		<p>
-			<h1>{{ photo.name }}</h1>
-			<p>{{ photo.edited-in }}</p>
+			{{ page.description }}
 		</p>
 	</div>
+	{% for photo in site.project31 %}
+	<div class="item">
+		<img src="{{ photo.img-name | prepend: '/assets/images/project31/' }}"/>
+		<div class="info">
+			<h1>{{ photo.name }}</h1>
+			<p>{{ photo.edited-in }}</p>
+		</div>
+	</div>
+	{% endfor %}
+	<div class="item">
+		{% include google-ads.html %}
+		<div class="info">
+			<h1>Support ads</h1>
+		</div>
+	</div>
 </div>
-{% endfor %}
-
-<!-- <ul class="media-list">
-  <li class="media">
-    <a class="media-left" href="#">
-      <img src="..." alt="...">
-    </a>
-    <div class="media-body">
-      <h4 class="media-heading">Media heading</h4>
-      ...
-    </div>
-  </li>
-</ul> -->

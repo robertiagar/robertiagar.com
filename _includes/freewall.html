@@ -1,0 +1,19 @@
+<script type="text/javascript">
+	$(function(){
+			var wall = new freewall("#container");
+			wall.reset({
+				selector: '.item',
+				animate: true,
+				cellW: 350,
+				cellH: 'auto',
+				onResize: function() {
+					wall.fitWidth();
+				}
+			});
+			
+			var images = wall.container.find('.item');
+			images.find('img').load(function() {
+				wall.fitWidth();
+			});
+	});
+</script>
