@@ -4,6 +4,8 @@ redcarpet:
   extensions: ["strikethrough"]
 highlighter: pygments
 permalink: /:year/:month/:day/:title/
+gems:
+  -jemoji
 
 # Site settings
 title: "Robert's Blog"
