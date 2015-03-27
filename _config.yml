@@ -5,7 +5,7 @@ redcarpet:
 highlighter: pygments
 permalink: /:year/:month/:day/:title/
 gems:
-  -jemoji
+  - jemoji
 
 # Site settings
 title: "Robert's Blog"
