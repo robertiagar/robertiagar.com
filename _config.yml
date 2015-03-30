@@ -121,6 +121,6 @@ prose:
       - name: "image"
         field:
           element: "text"
-          label: "Add Iamge to Post"
+          label: "Add Image to Post"
           placeholder: "Image path (relative to /assets/post-images/)"
           alterable: true
