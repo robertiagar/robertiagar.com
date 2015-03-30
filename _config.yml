@@ -90,3 +90,37 @@ defaults:
      email: "robert.iagar@gmail.com"
      authorimageurl: "/assets/images/bg.jpg"
      comments: true
+
+
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://robertiagar.com/'
+  relativeLinks: 'http://robertiagar.com/links.jsonp'
+  ignore:
+    - index.md
+    - _config.yml
+    - /_layouts
+    - /_includes
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "categories"
+        field:
+          element: "multiselect"
+          label: "Add Categories"
+          placeholder: "Add Categories"
+          alterable: true
+          options:
+            - name: "how-to"
+              value: "how-to"
+            - name: "android"
+              value: "android"
+      - name: "image"
+        field:
+          element: "text"
+          label: "Add Iamge to Post"
+          placeholder: "Image path (relative to /assets/post-images/)"
+          alterable: true
