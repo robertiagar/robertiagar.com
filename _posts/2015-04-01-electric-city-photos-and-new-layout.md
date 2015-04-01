@@ -17,4 +17,4 @@ Sadly, I didn't bring my camera to the party --alcohol, parties and DSLR's don't
 ## New Layout
 As you can see I have a new design on my blog. The theme is called [mediator](https://github.com/dirkfabisch/mediator). Special thanks to [@dirkfabisch](https://twitter.com/dirkfabisch) for the theme. I've also contributed to add support to the jemoji plugin (super happy about that).
 
-*UPDATE:* Jesus did you saw that aberration in the title image? Also cleared some typos.
+**UPDATE:** Jesus did you saw that aberration in the title image? Also cleared some typos.
