@@ -122,8 +122,7 @@ prose:
       - name: "date"
         field:
           element: "hidden"
-          label: "Post date"
-          date: CURRENT_DATETIME
+          value: CURRENT_DATETIME
       - name: "image"
         field:
           element: "text"
