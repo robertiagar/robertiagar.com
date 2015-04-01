@@ -121,10 +121,9 @@ prose:
           alterable: true
       - name: "date"
         field:
-          element: "text"
+          element: "hidden"
           label: "Post date"
-          placeholder: "Date"
-          alterable: true
+          date: CURRENT_DATETIME
       - name: "image"
         field:
           element: "text"
