@@ -113,11 +113,18 @@ prose:
           label: "Add Categories"
           placeholder: "Add Categories"
           alterable: true
-          options:
-            - name: "how-to"
-              value: "how-to"
-            - name: "android"
-              value: "android"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Post title"
+          placeholder: "Title"
+          alterable: true
+      - name: "date"
+        field:
+          element: "text"
+          label:"Post date"
+          placeholder: "Date"
+          alterable: true
       - name: "image"
         field:
           element: "text"

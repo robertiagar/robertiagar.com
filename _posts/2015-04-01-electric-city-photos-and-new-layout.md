@@ -1,11 +1,12 @@
 ---
+title: "Electric City, Photos and New Layout"
 layout: post
-published: false
 categories: 
   - electric city
   - photos
   - new layout
 image: "/assets/images/2015-04-01/title-image.jpg"
+date: 2015-04-01 14:30:00
 ---
 
 ## Electric City
