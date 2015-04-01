@@ -17,4 +17,9 @@ Sadly, I didn't bring my camera to the party --alcohol, parties and DSLR's don't
 ## New Layout
 As you can see I have a new design on my blog. The theme is called [mediator](https://github.com/dirkfabisch/mediator). Special thanks to [@dirkfabisch](https://twitter.com/dirkfabisch) for the theme. I've also contributed to add support to the jemoji plugin (super happy about that).
 
+<!-- 16:9 aspect ratio -->
+<div class="embed-responsive embed-responsive-16by9">
+<iframe src="//www.youtube.com/embed/jbsjY4vfbcg" frameborder="0" allowfullscreen></iframe>
+</div>
+
 **UPDATE:** Jesus did you saw that aberration in the title image? Also cleared some typos.
