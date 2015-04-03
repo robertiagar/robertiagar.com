@@ -42,7 +42,7 @@ social:
     url:	https://twitter.com/robertiagar
     desc: Follow me on twitter
     share_url: http://twitter.com/share
-    share_title: ?text=
+    share_title: ?via=robertiagar&text=
     share_link: "&amp;url="
 
   - icon:	facebook
