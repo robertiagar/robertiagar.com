@@ -1,13 +1,13 @@
 ---
 excerpt_separator: "<!--more-->"
 layout: post
-published: false
-title: All or nothing
+title: "All or nothing"
 categories: 
   - blogging
   - coding
   - photography
 image: "/assets/images/2015-04-03/title-image.jpg"
+date: 2015-04-03 13:00:00
 ---
 
 ## Blogging
