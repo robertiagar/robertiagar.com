@@ -10,7 +10,7 @@ gems:
 # Site settings
 title: "Robert's Blog"
 description: > # this means to ignore newlines until "email:"
-   Student. .NET Developer. Amateur Photographer. Welcome to my blog!
+  Software Engineer. .NET Developer. Amateur Photographer. Welcome to my blog!
 
 email: "robert.iagar@gmail.com"
 #blog logo
