@@ -1,7 +1,7 @@
 ---
 excerpt_separator: "<!--more-->"
 layout: post
-published: false
+published: true
 title: "Parking lots, concerts and flying glasses"
 ---
 
