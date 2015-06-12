@@ -62,6 +62,6 @@ Hope you found this post useful. It’s been a pain of figuring it out. Had help
 Subscribe to his blog: <a href="http://10rem.net">http://10rem.net</a>
 Follow him on Twitter: <a href="http://twitter.com/Pete_Brown">http://twitter.com/Pete_Brown</a>
 
-Me? You can find my blog at <a href="http://robertiagar.wordpress.com/">http://robertiagar.wordpress.com/</a> (mouthful I know) and Twitter: <a href="http://twitter.com/RobertIagar">http://twitter.com/RobertIagar</a>
+Me? You can find my blog at <a href="http://robertiagar.com/">http://robertiagar.com/</a> ~~(mouthful I know)~~ and Twitter: <a href="http://twitter.com/RobertIagar">http://twitter.com/RobertIagar</a>
 
 Stay tuned for more interesting finds…
