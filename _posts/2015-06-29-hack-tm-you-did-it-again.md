@@ -3,7 +3,6 @@ excerpt_separator: "<!--more-->"
 layout: post
 title: "Hack TM, you did it again..."
 date: "2015-06-29"
-published: false
 categories: 
   - hack tm
   - hackathon
