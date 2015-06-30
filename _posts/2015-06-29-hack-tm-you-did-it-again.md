@@ -31,4 +31,4 @@ The thing that really stuck with me this time was a challenge that's called ``Co
 ## End of weekend
 As you can already see I didn't talk about prizes. We didn't win one. We did however get some sweet swag. The prizes are not that important. At least not for me. All I wanted was to see our app finished. It wasn't finished as we would've wanted, but it was finished enough to be a proof of concept. That for me was more than enough.
 
-Hope you enjoyed this small read. Would like to read your comment below.
+Hope you enjoyed this small read. I would like to read your comments below.
