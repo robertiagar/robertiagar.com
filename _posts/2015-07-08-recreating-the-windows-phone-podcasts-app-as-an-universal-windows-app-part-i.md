@@ -9,6 +9,7 @@ categories:
   - podcasts
   - visual studio
 published: true
+image: "2015-07-08/title-image.jpg"
 ---
 Well then, time to actually start writing some more technical posts. It's been a while since I've written one, but might as well do it. In fact, this will be a series. As you can probably tell from the title, we'll be recreating to my best knowledge (and hopefully with some help from you guys) the Podcasts app from Windows Phone 8.1 as a Universal app. With Windows 10 and Visual Studio 2015 just around the corner, we'll be looking to start development using the Windows Universal App template for Windows 8.1 Store apps and switch to Windows 10 at launch.
 
