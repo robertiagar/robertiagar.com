@@ -5,7 +5,7 @@ categories:
   - electric city
   - photos
   - new layout
-image: "/assets/images/2015-04-01/title-image.jpg"
+image: "2015-04-01/title-image.jpg"
 date: 2015-04-01 14:30:00
 ---
 

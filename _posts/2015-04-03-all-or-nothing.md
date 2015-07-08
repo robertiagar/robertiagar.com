@@ -6,7 +6,7 @@ categories:
   - blogging
   - coding
   - photography
-image: "/assets/images/2015-04-03/title-image.jpg"
+image: "2015-04-03/title-image.jpg"
 date: 2015-04-03 13:00:00
 ---
 
