@@ -17,7 +17,10 @@
   {% else %}
   <meta property="og:image" content="{{ page.image | prepend: '/assets/post-images/' | prepend: site.baseurl | prepend: site.url }}" itemprop="image" />
   {% endif %}
-
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"/>
+  <meta property="og:type" content="article"/>
+    
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
   <link rel="shortcut icon" href="{{ "/assets/images/favicon.ico" | prepend: site.baseurl }}">
