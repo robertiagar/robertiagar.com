@@ -12,6 +12,11 @@
   <meta name="MobileOptimized" content="320" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  {% if page.image contains '/assets/post-images/' %}
+  <meta property="og:image" content="{{ page.image | prepend: site.baseurl | prepend: site.url }}" itemprop="image" />
+  {% else %}
+  <meta property="og:image" content="{{ page.image | prepend: '/assets/post-images/' | prepend: site.baseurl | prepend: site.url }}" itemprop="image" />
+  {% endif %}
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
