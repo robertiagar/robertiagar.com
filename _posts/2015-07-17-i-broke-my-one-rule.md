@@ -13,7 +13,7 @@ categories:
   - photography
 ---
 
-Back in [April]({% post_url 2015-04-01-electric-city-photos-and-new-layout %} I posted this and I'm quoting myself:
+Back in [April]({% post_url 2015-04-01-electric-city-photos-and-new-layout %}) I posted this and I'm quoting myself:
 
 > --alcohol, parties and DSLR's don't go very well together.
 > <footer>Robert Iagar <cite>[Electric City, Photos and New Layout]({% post_url 2015-04-01-electric-city-photos-and-new-layout %})</cite></footer>
