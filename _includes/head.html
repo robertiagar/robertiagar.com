@@ -20,6 +20,7 @@
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="{% if page.layout != "post" %}{{ site.description }}{% else %}{{ page.excerpt | strip_html }}{% endif %}"/>
     
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
