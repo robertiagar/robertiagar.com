@@ -4,7 +4,7 @@ layout: post
 published: true
 date: "2015-07-17"
 title: I broke my one rule
-image: "2015-07-17/title-image.jpg"
+image: "2015-07-17/title-image.JPG"
 categories: 
   - festival
   - dub fx
