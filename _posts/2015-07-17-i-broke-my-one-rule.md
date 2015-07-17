@@ -23,7 +23,7 @@ I broke this "rule". I went to a party with my camera and took a few shots. Noth
 You might be wondering what party was this. Well [Dub FX](http://dubfx.com) came to Timisoara for free at [AMBASADA](http://www.plai.ro/ambasada/). It was awesome. A bit crowdy --so crowdy some people couldn't even get inside after a few hours, but it was fun nonetheless.
 
 I case you don't know who Dub Fx is here's a song from him:
-<div class="embed-responsive embed-responsive-16by9"> <iframe src="//youtube.com/embed/tuNMBsrbv10" frameborder="0" allowfullscreen></iframe> </div>
+<div class="embed-responsive embed-responsive-16by9"> <iframe src="//youtube.com/embed/OkOBHrTObKw" frameborder="0" allowfullscreen></iframe> </div>
 
 A great artist that uses beatboxing and looping stations to create beats. He then sings over those beats and result is really nice.
 
