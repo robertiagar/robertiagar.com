@@ -36,7 +36,7 @@ To this:
 Nothing fancy. The code is fairly simple and I'm going to come clean that I didn't come up with it. It was [Eric Willis](http://notes.ericwillis.com/2009/11/pixelate-an-image-with-csharp/). Nonetheless here's the code:
 
 
-```
+{% highlight csharp %}
 private static Bitmap Pixelate(Bitmap image, Rectangle rectangle, Int32 pixelateSize)
 {
     Bitmap pixelated = new System.Drawing.Bitmap(image.Width, image.Height);
@@ -70,7 +70,7 @@ private static Bitmap Pixelate(Bitmap image, Rectangle rectangle, Int32 pixelate
  
     return pixelated;
 }
-```
+{% endhighlight %}
 
 The only problem with this code is that it's very inefficient. It takes about 18-20 seconds to process the image I've shown you earlier. That's a bit way too much. It can go much, much faster.
 
@@ -85,7 +85,7 @@ What does this mean?
 
 This method converts the image into a pointer that can be accessed way faster than a normal object. Now here's the problem with pointers: to work with them in C# you need to mark your code with the `unsafe` keyword. Either at the method signature, or a code region:
 
-```
+{% highlight chsarp %}
 private static unsafe DoSomethingWithPointers(){ // }
 
 private static DoSomethingWithPointers(int overload)
@@ -95,7 +95,8 @@ private static DoSomethingWithPointers(int overload)
     	//work with pointers here
     }
 }
-```
+{% endhighlight %}
+
 This is not a a huge deal, but we all know from `C/C++` that bad pointer handling could result in some leaks and security issues.
 
 > In the common language runtime (CLR), unsafe code is referred to as unverifiable code. Unsafe code in C# is not necessarily dangerous; it is just code whose safety cannot be verified by the CLR. The CLR will therefore only execute unsafe code if it is in a fully trusted assembly. If you use unsafe code, it is your responsibility to ensure that your code does not introduce security risks or pointer errors.
@@ -107,7 +108,7 @@ Now it's been a while since I've used pointers or worked with byte arrays and I'
 
 You cand find the implementation [here](https://github.com/robertiagar/Pixelator/blob/master/Pixelator.Console/LockBitmap.cs). Basically you still have the `GetPixel()` and `SetPixel()` methods so you can leave most of the code unchanged:
 
-```
+{% highlight csharp %}
 private static Bitmap PixelateLockBits(Bitmap image, Rectangle rectangle, int pixelateSize)
 {
 	using (LockBitmap lockBitmap = new LockBitmap(image))
@@ -138,11 +139,11 @@ private static Bitmap PixelateLockBits(Bitmap image, Rectangle rectangle, int pi
 	}
 	return image;
 }
-```
+{% endhighlight %}
 
 Just by doing that you get a speed increase from 18-20 seconds to just 5 seconds. Now that's what I call fast. But we can go faster. Having a byte arrays means that different threads can access the array at the same time, so no thread locking is required. Thanks to the nice folks at Microsoft, we have the [TPL - Task Parallel Library](http://blogs.msdn.com/b/pfxteam/). The inner 2 `for's`, the ones that set the pixels colors, can be run in parallel:
 
-```
+{% highlight csharp %}
 Parallel.For(xx, xx + pixelateSize, x =>
 {
 	if (x < width)
@@ -156,7 +157,7 @@ Parallel.For(xx, xx + pixelateSize, x =>
 		});
 	}
 });
-```
+{% endhighlight %}
 
 Doing this increases the speed of the pixelation from 5 seconds to 2 seconds. Your CPU might spike up to 100% usage on all cores, but that's the TPL doing its job. I did try to transform the outer two `for's` too, but that didn't increase speed in any way. It actually introduced a bottleneck, making the whole code run even slower than the no `LockBits` method.
 
