@@ -80,7 +80,20 @@ What does this do?
 
 What does this mean? 
 
-This method converts the image into a pointer that can be accessed way faster than a normal object. Now here's the problem with pointers: 
+This method converts the image into a pointer that can be accessed way faster than a normal object. Now here's the problem with pointers: to work with pointers in C# you need to mark your code with the `unsafe` keyword. Either at the method signature, or a code region:
+
+```
+private static unsafe DoSomethingWithPointers(){ // }
+
+private static DoSomethingWithPointers(int overload)
+{
+	unsafe
+    {
+    	//work with pointers here
+    }
+}
+```
+This is not a a huge deal, but we all know from C that bad pointer handling could result in some leaks and security issues.
 
 > In the common language runtime (CLR), unsafe code is referred to as unverifiable code. Unsafe code in C# is not necessarily dangerous; it is just code whose safety cannot be verified by the CLR. The CLR will therefore only execute unsafe code if it is in a fully trusted assembly. If you use unsafe code, it is your responsibility to ensure that your code does not introduce security risks or pointer errors.
 > <footer><cite>[MSDN](https://msdn.microsoft.com/en-us/library/t2yzs44b.aspx)</cite><footer>
