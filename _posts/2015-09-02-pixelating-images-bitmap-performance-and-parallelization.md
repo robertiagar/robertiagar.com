@@ -69,7 +69,7 @@ private static Bitmap Pixelate(Bitmap image, Rectangle rectangle, Int32 pixelate
 }
 ```
 
-The only problem with this code is that it's very inefficient. It takes about 18-20 seconds to process the image I've shown a earlier. That's a bit way too much. It can go much, much faster.
+The only problem with this code is that it's very inefficient. It takes about 18-20 seconds to process the image I've shown you earlier. That's a bit way too much. It can go much, much faster.
 
 Optimization was never my strong suit, so after a few google search, some stack overflow questions, I've came to the conclusion: use [`LockBits()`](https://msdn.microsoft.com/en-us/library/system.drawing.bitmap.lockbits%28v=vs.110%29.aspx?f=255&MSPPError=-2147217396). 
 
@@ -137,7 +137,7 @@ private static Bitmap PixelateLockBits(Bitmap image, Rectangle rectangle, int pi
 }
 ```
 
-Just by doing that you get a speed increase from 18-20 seconds to just 5 seconds. Now that's what I call fast. But we can go faster. Having a byte arrays means that different threads can access the array at the same time, so no thread locking is required. Thanks to the nice folks at Microsoft we have the [TPL - Task Parallel Library](http://blogs.msdn.com/b/pfxteam/). The inner 2 `for's`, the ones that set the pixels colors, can be run in parallel:
+Just by doing that you get a speed increase from 18-20 seconds to just 5 seconds. Now that's what I call fast. But we can go faster. Having a byte arrays means that different threads can access the array at the same time, so no thread locking is required. Thanks to the nice folks at Microsoft, we have the [TPL - Task Parallel Library](http://blogs.msdn.com/b/pfxteam/). The inner 2 `for's`, the ones that set the pixels colors, can be run in parallel:
 
 ```
 Parallel.For(xx, xx + pixelateSize, x =>
@@ -155,12 +155,12 @@ Parallel.For(xx, xx + pixelateSize, x =>
 });
 ```
 
-Doing this increases the speed of the pixelation from 5 seconds to 2 seconds. Your CPU might spike up to 100% usage on all cores, but that's the TPL doing its job. I did try to transform the outer two `for's` two, but that didn't increase speed in any way. It actually introduced a bottleneck, making the whole code run even slower than the no `LockBits` method.
+Doing this increases the speed of the pixelation from 5 seconds to 2 seconds. Your CPU might spike up to 100% usage on all cores, but that's the TPL doing its job. I did try to transform the outer two `for's` too, but that didn't increase speed in any way. It actually introduced a bottleneck, making the whole code run even slower than the no `LockBits` method.
 
 ##Final thougths
 This was one fairly interesting ride. And I'm really satisfied with the results, so much so that I've started creating a Windows 8.1 Universal App and a Windows 10 UWP app that pixelate images. Now if the API was there, I would have made them to set your Desktop Background / Phone Background. Sadly you can only change the Lockscreen from Universal Apps.
 
-The code for Windows RT / Windows 10 is slightly different, as you don't have the `Bitmap.LockBits()` method available, but you do have access to the PixelBuffer with is bassically the same thing as the pointer from `LockBits()`. This goes a bit out of the scope of this post, but if you want to find out more check out these files:
+The code for Windows RT / Windows 10 is slightly different, as you don't have the `Bitmap.LockBits()` method available, but you do have access to the PixelBuffer with is bassically the same thing as the pointer from `LockBits()`. This goes a bit out of the scope of this post, but if you want to find out more, check out these files:
 
 * [SimpleBitmap.cs](https://github.com/robertiagar/Pixelator/blob/master/Pixelator.Core/SimpleBitmap.cs)
 * [PixelatorBitmap.cs](https://github.com/robertiagar/Pixelator/blob/master/Pixelator.Core/PixelatorBitmap.cs)
