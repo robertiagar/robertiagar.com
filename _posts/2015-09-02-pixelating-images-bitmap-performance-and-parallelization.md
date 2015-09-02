@@ -80,7 +80,7 @@ What does this do?
 
 What does this mean? 
 
-This method converts the image into a pointer that can be accessed way faster than a normal object. Now here's the problem with pointers: to work with pointers in C# you need to mark your code with the `unsafe` keyword. Either at the method signature, or a code region:
+This method converts the image into a pointer that can be accessed way faster than a normal object. Now here's the problem with pointers: to work with them in C# you need to mark your code with the `unsafe` keyword. Either at the method signature, or a code region:
 
 ```
 private static unsafe DoSomethingWithPointers(){ // }
@@ -93,7 +93,14 @@ private static DoSomethingWithPointers(int overload)
     }
 }
 ```
-This is not a a huge deal, but we all know from C that bad pointer handling could result in some leaks and security issues.
+This is not a a huge deal, but we all know from `C` that bad pointer handling could result in some leaks and security issues.
 
 > In the common language runtime (CLR), unsafe code is referred to as unverifiable code. Unsafe code in C# is not necessarily dangerous; it is just code whose safety cannot be verified by the CLR. The CLR will therefore only execute unsafe code if it is in a fully trusted assembly. If you use unsafe code, it is your responsibility to ensure that your code does not introduce security risks or pointer errors.
 > <footer><cite>[MSDN](https://msdn.microsoft.com/en-us/library/t2yzs44b.aspx)</cite><footer>
+
+You can work with pointers without marking you code as `unsafe` by copying the pointer to a byte array using the [`Marshal.Copy`](https://msdn.microsoft.com/en-us/library/system.runtime.interopservices.marshal.copy(v=vs.80).aspx) method. That way the CLR is happy that you don't work with pointers directly and you're not risking anything by accessing system memory.
+
+Now it's been a while since I've used pointers or worked with byte arrays and I'm a bit rusty, but again Google is your friend. I've found a nice wrapper around the whole LockBits and pointer/byte array method of accessing the images pixels on [CodeProject](http://www.codeproject.com/Tips/240428/Work-with-bitmap-faster-with-Csharp).
+
+You cand find the implementation [here](https://github.com/robertiagar/Pixelator/blob/master/Pixelator.Console/LockBitmap.cs).
+
