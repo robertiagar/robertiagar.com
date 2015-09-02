@@ -85,7 +85,7 @@ What does this mean?
 
 This method converts the image into a pointer that can be accessed way faster than a normal object. Now here's the problem with pointers: to work with them in C# you need to mark your code with the `unsafe` keyword. Either at the method signature, or a code region:
 
-{% highlight chsarp %}
+{% highlight csharp %}
 private static unsafe DoSomethingWithPointers(){ // }
 
 private static DoSomethingWithPointers(int overload)
