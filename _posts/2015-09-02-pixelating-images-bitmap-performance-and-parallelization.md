@@ -142,17 +142,17 @@ Just by doing that you get a speed increase from 18-20 seconds to just 5 seconds
 
 ```
 Parallel.For(xx, xx + pixelateSize, x =>
-						{
-							if (x < width)
-							{
-								Parallel.For(yy, yy + pixelateSize, y =>
-								{
-									if (y < height)
-									{
-										lockBitmap.SetPixel(x, y, pixel);
-									}
-								});
-							}
-						});
+{
+	if (x < width)
+	{
+		Parallel.For(yy, yy + pixelateSize, y =>
+		{
+			if (y < height)
+			{
+				lockBitmap.SetPixel(x, y, pixel);
+			}
+		});
+	}
+});
 ```                        
 
