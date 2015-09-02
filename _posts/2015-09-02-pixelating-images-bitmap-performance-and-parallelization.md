@@ -102,7 +102,7 @@ You can work with pointers without marking you code as `unsafe` by copying the p
 
 Now it's been a while since I've used pointers or worked with byte arrays and I'm a bit rusty, but again Google is your friend. I've found a nice wrapper around the whole LockBits and pointer/byte array method of accessing the images pixels on [CodeProject](http://www.codeproject.com/Tips/240428/Work-with-bitmap-faster-with-Csharp).
 
-You cand find the implementation [here](https://github.com/robertiagar/Pixelator/blob/master/Pixelator.Console/LockBitmap.cs). Basically you still have the GetPixel and SetPixel methods so you can leave most of the code unchanged:
+You cand find the implementation [here](https://github.com/robertiagar/Pixelator/blob/master/Pixelator.Console/LockBitmap.cs). Basically you still have the `GetPixel()` and `SetPixel()` methods so you can leave most of the code unchanged:
 
 ```
 private static Bitmap PixelateLockBits(Bitmap image, Rectangle rectangle, int pixelateSize)
@@ -137,7 +137,7 @@ private static Bitmap PixelateLockBits(Bitmap image, Rectangle rectangle, int pi
 }
 ```
 
-Just by doing that you get a speed increase from 18-20 seconds to just 5 seconds. Now that's what I call fast. But we can go faster. Having a byte arrays means that different threads can access the array at the same time, so no thread locking in required. Thanks to the nice folks at Microsoft we have the [TPL - Task Parallel Library](http://blogs.msdn.com/b/pfxteam/). The inner 2 `for's`, the ones that set the pixels colors, can pe run in parallel:
+Just by doing that you get a speed increase from 18-20 seconds to just 5 seconds. Now that's what I call fast. But we can go faster. Having a byte arrays means that different threads can access the array at the same time, so no thread locking is required. Thanks to the nice folks at Microsoft we have the [TPL - Task Parallel Library](http://blogs.msdn.com/b/pfxteam/). The inner 2 `for's`, the ones that set the pixels colors, can be run in parallel:
 
 ```
 Parallel.For(xx, xx + pixelateSize, x =>
@@ -155,10 +155,10 @@ Parallel.For(xx, xx + pixelateSize, x =>
 });
 ```
 
-Doing this increases the speed of the pixelation from 5 seconds to 2 seconds. Your CPU might spike up 100% usage on all cores, but that's the TPL doing its job. I did try to transform the outer two `for's` two, but that didn't increase speed in any way. It actually introduced a bottleneck, making the whole code run even slower than the no `LockBits` method.
+Doing this increases the speed of the pixelation from 5 seconds to 2 seconds. Your CPU might spike up to 100% usage on all cores, but that's the TPL doing its job. I did try to transform the outer two `for's` two, but that didn't increase speed in any way. It actually introduced a bottleneck, making the whole code run even slower than the no `LockBits` method.
 
 ##Final thougths
-This was one fairly interesting ride. And I'm really satisfied with the results, so much so that I've started creating a Windows 8.1 Universal App and a Windows 10 UWP app the pixelates images. Now if the API was there, I would have made then to set your Desktop Background / Phone Background. Sadly you can only change the Lockscreen from Universal Apps.
+This was one fairly interesting ride. And I'm really satisfied with the results, so much so that I've started creating a Windows 8.1 Universal App and a Windows 10 UWP app that pixelate images. Now if the API was there, I would have made them to set your Desktop Background / Phone Background. Sadly you can only change the Lockscreen from Universal Apps.
 
 The code for Windows RT / Windows 10 is slightly different, as you don't have the `Bitmap.LockBits()` method available, but you do have access to the PixelBuffer with is bassically the same thing as the pointer from `LockBits()`. This goes a bit out of the scope of this post, but if you want to find out more check out these files:
 
@@ -166,6 +166,7 @@ The code for Windows RT / Windows 10 is slightly different, as you don't have th
 * [PixelatorBitmap.cs](https://github.com/robertiagar/Pixelator/blob/master/Pixelator.Core/PixelatorBitmap.cs)
 
 If you want me to write about the Universal Projects just leave me a comment below.
+The full code is available on [GitHub](https://github.com/robertiagar/Pixelator)
 
 ##Thanks
-Again, special thanks to [Eric Willis](http://notes.ericwillis.com/2009/11/pixelate-an-image-with-csharp/) for providing the code and to [CodeProject](http://www.codeproject.com/Tips/240428/Work-with-bitmap-faster-with-Csharp) author (Vano Maisuradze)[http://www.codeproject.com/script/Membership/View.aspx?mid=5637855]. I just expanded their implementations with Parralel Programming.
+Again, special thanks to [Eric Willis](http://notes.ericwillis.com/2009/11/pixelate-an-image-with-csharp/) for providing the code and to [CodeProject](http://www.codeproject.com/Tips/240428/Work-with-bitmap-faster-with-Csharp) author [Vano Maisuradze](http://www.codeproject.com/script/Membership/View.aspx?mid=5637855). I just expanded their implementations with Parralel Programming.
