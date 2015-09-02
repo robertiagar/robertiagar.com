@@ -10,6 +10,7 @@ published: false
 title: "Pixelating images, Bitmap performance and parallelization"
 ---
 
+
 Before you go on yelling "Where the heck is Part 2 for the Podcasts series?" I'd like to point out a few things:
 
 1. I'm lazy
@@ -136,4 +137,22 @@ private static Bitmap PixelateLockBits(Bitmap image, Rectangle rectangle, int pi
 	return image;
 }
 ```
+
+Just by doing that you get a speed increase from 18-20 seconds to just 5 seconds. Now that's what I call fast. But we can go faster. Having a byte arrays means that different threads can access the array at the same time, so no thread locking in required. Thanks to the nice folks at Microsoft we have the [TPL - Task Parallel Library](http://blogs.msdn.com/b/pfxteam/). The inner 2 `for's`, the ones that set the pixels colors, can pe run in parallel:
+
+```
+Parallel.For(xx, xx + pixelateSize, x =>
+						{
+							if (x < width)
+							{
+								Parallel.For(yy, yy + pixelateSize, y =>
+								{
+									if (y < height)
+									{
+										lockBitmap.SetPixel(x, y, pixel);
+									}
+								});
+							}
+						});
+```                        
 
