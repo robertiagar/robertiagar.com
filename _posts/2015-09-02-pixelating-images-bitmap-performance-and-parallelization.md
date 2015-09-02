@@ -11,6 +11,7 @@ title: "Pixelating images, Bitmap performance and parallelization"
 ---
 
 Before you go on yelling "Where the heck is Part 2 for the Podcasts series?" I'd like to point out a few things:
+
 1. I'm lazy
 2. I was on vacation 
 3. I have a full time job
@@ -67,3 +68,19 @@ private static Bitmap Pixelate(Bitmap image, Rectangle rectangle, Int32 pixelate
     return pixelated;
 }
 ```
+
+The only problem with this code is that it's very inefficient. It takes about 18-20 seconds to process the image I've shown a earlier. That's a bit way too much. It can go much, much faster.
+
+Optimization was never my strong suit, so after a few google search, some stack overflow questions, I've came to the conclusion: use [`LockBits()`](https://msdn.microsoft.com/en-us/library/system.drawing.bitmap.lockbits%28v=vs.110%29.aspx?f=255&MSPPError=-2147217396). 
+
+What does this do? 
+
+> Locks a Bitmap into system memory.
+> <footer><cite>Straight form [MSDN](https://msdn.microsoft.com/en-us/library/system.drawing.bitmap.lockbits%28v=vs.110%29.aspx?f=255&MSPPError=-2147217396).</cite></footer>
+
+What does this mean? 
+
+This method converts the image into a pointer that can be accessed way faster than a normal object. Now here's the problem with pointers: 
+
+> In the common language runtime (CLR), unsafe code is referred to as unverifiable code. Unsafe code in C# is not necessarily dangerous; it is just code whose safety cannot be verified by the CLR. The CLR will therefore only execute unsafe code if it is in a fully trusted assembly. If you use unsafe code, it is your responsibility to ensure that your code does not introduce security risks or pointer errors.
+> <footer><cite>[MSDN](https://msdn.microsoft.com/en-us/library/t2yzs44b.aspx)</cite><footer>
