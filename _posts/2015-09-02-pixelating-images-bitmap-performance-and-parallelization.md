@@ -5,10 +5,11 @@ categories:
   - performance
   - parallelization
   - "c#"
-image: ""
-published: false
+image: "2015-09-02/title-image.jpg"
+published: true
 title: "Pixelating images, Bitmap performance and parallelization"
 ---
+
 
 Before you go on yelling "Where the heck is Part 2 for the Podcasts series?" I'd like to point out a few things:
 
