@@ -8,6 +8,8 @@ categories:
 image: "2015-09-02/title-image.jpg"
 published: true
 title: "Pixelating images, Bitmap performance and parallelization"
+layout: post
+date: 2015-09-02
 ---
 
 
