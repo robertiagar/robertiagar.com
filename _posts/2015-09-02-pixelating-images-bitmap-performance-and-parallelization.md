@@ -174,4 +174,4 @@ If you want me to write about the Universal Projects just leave me a comment bel
 The full code is available on [GitHub](https://github.com/robertiagar/Pixelator).
 
 ##Thanks
-Again, special thanks to [Eric Willis](http://notes.ericwillis.com/2009/11/pixelate-an-image-with-csharp/) for providing the code and to [CodeProject](http://www.codeproject.com/Tips/240428/Work-with-bitmap-faster-with-Csharp) author [Vano Maisuradze](http://www.codeproject.com/script/Membership/View.aspx?mid=5637855). I just expanded their implementations with Parralel Programming.
+Again, special thanks to [Eric Willis](http://notes.ericwillis.com/2009/11/pixelate-an-image-with-csharp/) for providing the code and to [CodeProject](http://www.codeproject.com/Tips/240428/Work-with-bitmap-faster-with-Csharp) author [Vano Maisuradze](http://www.codeproject.com/script/Membership/View.aspx?mid=5637855). I just expanded their implementations with Parallel Programming.
