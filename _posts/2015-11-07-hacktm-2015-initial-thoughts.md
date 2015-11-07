@@ -9,7 +9,7 @@ categories:
   - heaven
   - "heaven-ballroom"
 image: ""
-published: false
+published: true
 title: HackTM 2015 initial thoughts
 ---
 
