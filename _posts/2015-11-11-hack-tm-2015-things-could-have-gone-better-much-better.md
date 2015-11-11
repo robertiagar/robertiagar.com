@@ -9,7 +9,7 @@ categories:
   - timisoara
   - heaven ballroom
 image: "2015-11-11/hack-lead.jpg"
-published: false
+published: true
 title: "Hack TM 2015. Things could have gone better, much better..."
 ---
 
