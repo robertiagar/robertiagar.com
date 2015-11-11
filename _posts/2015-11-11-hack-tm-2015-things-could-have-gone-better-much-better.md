@@ -8,7 +8,7 @@ categories:
   - hack
   - timisoara
   - heaven ballroom
-image: "2015-11-11/hack-lead.jpg"
+image: "2015-11-11/hack_lead.jpg"
 published: true
 title: "Hack TM 2015. Things could have gone better, much better..."
 ---
@@ -56,3 +56,5 @@ The thing that improved was the judging process. Instead of 30+ teams preseting 
 All in all, the second edition of HackTM, or HackTM 2015 was an interesting event. It had it's downsides (the cold, slight annoyances with the team sizes), but there are signs of improvement from the team. I'm sure it will be better next year. 
 
 It was a pleasure being there, amongst my fellow geeks and hackers. Don't stop hacking...
+
+Title image source: [HackTM Facebook](https://www.facebook.com/hacktm.ro/photos/t.100000283420637/1013101655416272/)
