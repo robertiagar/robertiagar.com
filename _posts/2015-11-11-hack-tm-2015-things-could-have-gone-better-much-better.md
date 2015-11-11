@@ -26,9 +26,27 @@ We tried to make an app that tracks the location of your friends. Not in stalk-y
 
 ###Available tracks for participation
 There were 6 development track available:
+
 * City Projects
 * Automotive
 * eHealth
 * Game Development
 * Open
 * Junior Lead Coding
+
+Since our idea didn't really fit anywhere else, we opted for the Open Development track. 
+There were a lot of different and interesting projects in each and every track. The most interesting by far was _Snowboard trainer_. Different sensors mounted on the board and on the boots monitored pressure and a micro-controller crunched the numbers to tell your how you should adjust your position so you'd be in the correct stance. Quite the thing to achieve in 48 hours.
+
+###Judging the competition
+The only problem I have with the organizers is that they pressured most of the teams to push their code on [github](https://github.com/hacktm15). We [did](https://github.com/hacktm15/perimtr), but some of the teams (CarOS for example - the same should be on github, it's not) haven't. Another thing I have is that some of the teams kinda broken the spirit of a hackathon. In a hackathon you go and build something from scratch in the allocated time. You don't come with code you've been working on for a few months. I've seen some projects on git that have [commits](https://github.com/hacktm15/pph/commits/master) are *far back as 5 years*. That's probably a fork, but c'mon. Adding a feature to an already functioning app is not hacking, it's upgrading. Hacking is when you take multiple stuff, mash 'em together and hope you get something new and interesting.
+
+Another thing I have is they were teams that were about 8 members big, when most of the teams were 3-5 people max. They should limit the teams to a maximum of 5 memebers. And don't you come 2 teams with 5 members where Team1 does FeatureA for App X and Team2 does FeatureB for the same app. No. This needs to be checked, not sure how, but it should.
+
+This problem was here last year too.
+
+The thing that improved was the judging process. Instead of 30+ teams preseting their app and judging by the presentation, which takes a humongous amout of time, the jury of the each track, made a preselection of the top 3 finalists of each development track. These 3 finalist would present their hack to the whole crowd. That way we didn't spend as much time to wait for the grand prize winner announcement and we didn't get bored. Let's face it, when 30 some teams keep on talking on talking after 48hours of no or little, kinda gets boring fast.
+
+###Final thoughts
+All in all, the second edition of HackTM, or HackTM 2015 was an interesting event. It had it's downsides (the cold, slight annoyances with the team sizes), but there are signs of improvement from the team. I'm sure it will be better next year. 
+
+It was a pleasure being 
