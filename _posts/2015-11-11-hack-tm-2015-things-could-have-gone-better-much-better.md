@@ -2,8 +2,13 @@
 excerpt_separator: "<!--more-->"
 layout: post
 categories: 
-  - "null"
-image: ""
+  - hacktm
+  - "hacktm-2015"
+  - hackathon
+  - hack
+  - timisoara
+  - heaven ballroom
+image: "/2015-11-11/hack-lead.jpg"
 published: false
 title: "Hack TM 2015. Things could have gone better, much better..."
 ---
@@ -49,4 +54,4 @@ The thing that improved was the judging process. Instead of 30+ teams preseting 
 ###Final thoughts
 All in all, the second edition of HackTM, or HackTM 2015 was an interesting event. It had it's downsides (the cold, slight annoyances with the team sizes), but there are signs of improvement from the team. I'm sure it will be better next year. 
 
-It was a pleasure being 
+It was a pleasure being there, amongst my fellow geeks and hackers. Don't stop hacking...
