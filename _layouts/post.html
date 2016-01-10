@@ -69,6 +69,11 @@
               <div class="author-image" style="background-image: url({{site.author_image}})">Blog Logo</div>
               <h4>{{ site.author }}</h4>
               <p class="bio">{{author.bio}}</p>
+              <a class="twitter-follow-button"  href="https://twitter.com/robertiagar" data-show-screen-name="false">Follow @robertiagar</a>
+              <script>
+              window.twttr = (function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0],    t = window.twttr || {};  if (d.getElementById(id)) return t;  js = d.createElement(s);  js.id = id;  js.src = "https://platform.twitter.com/widgets.js";  fjs.parentNode.insertBefore(js, fjs);  
+              t._e = [];  t.ready = function(f) {    t._e.push(f);  };  return t;}(document, "script", "twitter-wjs"));
+              </script>
               <hr>
               <p class="published">Published <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time></p>
             </section>
