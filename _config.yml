@@ -98,7 +98,12 @@ defaults:
      authorimageurl: "/assets/images/bg.jpg"
      comments: true
 
-
+exclude: 
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - CNAME
+  
 prose:
   rooturl: '_posts'
   siteurl: 'http://robertiagar.com/'
