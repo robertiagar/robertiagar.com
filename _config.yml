@@ -1,7 +1,5 @@
 # Build settings
-markdown: redcarpet
-redcarpet:
-  extensions: ["strikethrough"]
+markdown: kramdown
 highlighter: pygments
 permalink: /:year/:month/:day/:title/
 gems:
