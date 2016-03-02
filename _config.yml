@@ -5,6 +5,7 @@ permalink: /:year/:month/:day/:title/
 gems:
   - jemoji
   - jekyll-paginate
+  - classifier-reborn
 
 # Site settings
 title: "Robert's Blog"
