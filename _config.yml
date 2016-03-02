@@ -1,9 +1,12 @@
 # Build settings
-markdown: kramdown
-highlighter: pygments
+markdown: redcarpet
+redcarpet:
+  extensions: ["strikethrough"]
+highlighter: rouge
 permalink: /:year/:month/:day/:title/
 gems:
   - jemoji
+  - jekyll-paginate
 
 # Site settings
 title: "Robert's Blog"
