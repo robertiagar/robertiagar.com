@@ -4,7 +4,6 @@ layout: post
 categories: 
   - thoughts
   - help needed
-image: ""
 published: true
 title: "I like speaking, but I lack the confidence"
 ---
