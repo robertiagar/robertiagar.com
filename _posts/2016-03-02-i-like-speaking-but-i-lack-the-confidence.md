@@ -2,7 +2,8 @@
 excerpt_separator: "<!--more-->"
 layout: post
 categories: 
-  - "null"
+  - thoughts
+  - help needed
 image: ""
 published: false
 title: "I like speaking, but I lack the confidence"
