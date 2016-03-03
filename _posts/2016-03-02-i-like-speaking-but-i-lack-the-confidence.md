@@ -5,7 +5,7 @@ categories:
   - thoughts
   - help needed
 image: ""
-published: false
+published: true
 title: "I like speaking, but I lack the confidence"
 ---
 
