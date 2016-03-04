@@ -7,7 +7,7 @@
     {% include header.html %}
     <main class="content" role="main">
       <article class="post">
-        {% if page.image != "" %}
+        {% if page.image != nil %}
         <div class="article-image">
           <div class="post-image-image" style="background-image: url({% if page.image %}{{ page.image }}{% endif %})">
             Article Image
