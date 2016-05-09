@@ -24,7 +24,7 @@ Notice how I said that I'm lazy twice? Good. The other reasons don't really coun
 
 Now that we've gotten this out of the way, let's talk about what this post is really about: pixelating images.
 
-##But why?
+## But why?
 
 ![But why?]({{site.baseurl}}/assets/post-images/Ryan_Reynolds_But_Why.gif)
 
@@ -161,7 +161,7 @@ Parallel.For(xx, xx + pixelateSize, x =>
 
 Doing this increases the speed of the pixelation from 5 seconds to 2 seconds. Your CPU might spike up to 100% usage on all cores, but that's the TPL doing its job. I did try to transform the outer two `for's` too, but that didn't increase speed in any way. It actually introduced a bottleneck, making the whole code run even slower than the no `LockBits` method.
 
-##Final thougths
+## Final thougths
 This was one fairly interesting ride. And I'm really satisfied with the results, so much so that I've started creating a Windows 8.1 Universal App and a Windows 10 UWP app that pixelate images. Now if the API was there, I would have made them to set your Desktop Background / Phone Background. Sadly you can only change the Lockscreen from Universal Apps.
 
 The code for Windows RT / Windows 10 is slightly different, as you don't have the `Bitmap.LockBits()` method available, but you do have access to the PixelBuffer with is bassically the same thing as the pointer from `LockBits()`. This goes a bit out of the scope of this post, but if you want to find out more, check out these files:
@@ -173,5 +173,5 @@ If you want me to write about the Universal Projects just leave me a comment bel
 
 The full code is available on [GitHub](https://github.com/robertiagar/Pixelator).
 
-##Thanks
+## Thanks
 Again, special thanks to [Eric Willis](http://notes.ericwillis.com/2009/11/pixelate-an-image-with-csharp/) for providing the code and to [CodeProject](http://www.codeproject.com/Tips/240428/Work-with-bitmap-faster-with-Csharp) author [Vano Maisuradze](http://www.codeproject.com/script/Membership/View.aspx?mid=5637855). I just expanded their implementations with Parallel Programming.
