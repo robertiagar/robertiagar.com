@@ -15,3 +15,5 @@ robertiagar.com
 [![Stories in Ready](https://badge.waffle.io/robertiagar/robertiagar.com.svg?label=ready&title=Ready)](http://waffle.io/robertiagar/robertiagar.com)
 
 Well then. This is my personal site. Everything in the `_posts`, `_project31`, `_projects`, `assets` folder is my own work. The rest, you can fork. :)
+
+Of course you need to change the google analytics and ad-sense codes in the `google-ads.html` include also :)
