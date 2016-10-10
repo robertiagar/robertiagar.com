@@ -35,11 +35,10 @@ While some take about 3-4 frames of the same shot, with an SLR that might be a b
 Nikon created the FM to be their entry level consumer cameras, --much like the D3000/D5000 series of today's DSLR. Being an almost 40 year old camera, I'd say it stood up the test of time, granted I don't know how much the preivous owner used it. My model has been bought from a Yard sale for $20.00. It came with a lot of accesorries and equipment:
 
 * A carrying bag
+* A Vivitar Flash
 * 2 lenses:
   * 50mm Nikon F2.0
   * 28mm Rokinon F2.8
-* A Vivitar Flash
-
 
 ### Why would you use an SLR when you have a modern DSLR?
 
