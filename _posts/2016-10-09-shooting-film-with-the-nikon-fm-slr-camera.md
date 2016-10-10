@@ -7,7 +7,7 @@ categories:
   - nikon fm
   - film camera
 image: 2016-10-09/film_lead.jpg
-published: false
+published: true
 title: Shooting film with the Nikon FM SLR Camera
 ---
 
@@ -22,7 +22,7 @@ While some take about 3-4 frames of the same shot, with an SLR that might be a b
 ![Sounds great. Tastes great. Feels legendary.]({{site.baseurl}}/assets/post-images/2016-10-09/001.jpg)
 ![Getting home.]({{site.baseurl}}/assets/post-images/2016-10-09/002.jpg)
 ![Finding that great shot.]({{site.baseurl}}/assets/post-images/2016-10-09/003.jpg)
-![Lonely pidgeon.]({{site.baseurl}}/assets/post-images/2016-10-09/002.jpg)
+![Lonely pidgeon.]({{site.baseurl}}/assets/post-images/2016-10-09/004.jpg)
 ![Transfagarasan Highway.]({{site.baseurl}}/assets/post-images/2016-10-09/005.jpg)
 ![Shipwrecked.]({{site.baseurl}}/assets/post-images/2016-10-09/006.jpg)
 ![Sunset.]({{site.baseurl}}/assets/post-images/2016-10-09/007.jpg)
