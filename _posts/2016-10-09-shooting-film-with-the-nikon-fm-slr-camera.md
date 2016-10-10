@@ -39,8 +39,7 @@ Nikon created the FM to be their entry level consumer cameras, --much like the D
   * 50mm Nikon F2.0
   * 28mm Rokinon F2.8
 * A Vivitar Flash
-* A Vivitar Exposure-meter
-<!--TODO: Insert more items-->
+
 
 ### Why would you use an SLR when you have a modern DSLR?
 
