@@ -32,7 +32,7 @@ While some take about 3-4 frames of the same shot, with an SLR that might be a b
 
 ### Test of time
 
-Nikon created the FM to be their entry level consumer cameras, --much like the D3000/D5000 series of today's DSLR. Being an almost 40 year old camera, I'd say it stood up the test of time, granted I don't know how much the preivous owner used it. My model has been bought from a Yard sale for $20.00. It came with a lot of accesorries and equipment:
+Nikon created the FM to be their entry level consumer cameras, --much like the D3000/D5000 series of today's DSLR. Being an almost 40 year old camera, I'd say it stood up the test of time, granted I don't know how much the preivous owner used it. My model has been bought from a yard sale for $20.00. It came with a lot of accesorries and equipment:
 
 * A carrying bag
 * A Vivitar Flash
@@ -42,5 +42,5 @@ Nikon created the FM to be their entry level consumer cameras, --much like the D
 
 ### Why would you use an SLR when you have a modern DSLR?
 
-Grate question. I only use it for nostalgic reasons. Some of the shots I've taken could've been easily taken with an DSLR and made to look like vintage photos editing software ligh Photoshop or Lightroom. 
+Great question. I only use it for nostalgic reasons. Some of the shots I've taken could've been easily taken with an DSLR and made to look like vintage photos editing software ligh Photoshop or Lightroom. 
 But the random light leaks, that moment when you miss the focus by an inch, random specs on the film can't be so easily added in. There's something so satisfaying when you take your shot, get the film to be developed and then look through your frames and see that out of 36 you get 10-20 frames that are just perfect --for an amateur of course.
