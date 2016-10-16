@@ -15,7 +15,7 @@ I had film cameras when I was little, but nothing compares with a SLR film camer
 
 <!--more-->
 
-While some take about 3-4 frames of the same shot, with an SLR that might be a bit hard, as your limited to 34 frames of 35mm film. Modern DSLR have sensors that can go up to 25,600 --and even higher ISO levels, in an SLR the film is your sensor. Usually that's the one that locked to a constant value (depending on the ISO sensitivity of your film). You can adjust your f-stop and exposure times. Thanks to the built-in light meter, you can expose your shot correctly most of the times.
+While some take about 3-4 frames of the same shot, with an SLR that might be a bit hard, as your limited to 34 frames of 35mm film. Modern DSLR have sensors that can go up to 25,600 --and even higher ISO levels, in an SLR the film is your sensor. Usually that's the one that is locked to a constant value (depending on the ISO sensitivity of your film). You can adjust your f-stop and exposure time. Thanks to the built-in light meter, you can expose your shot correctly most of the time.
 
 ### Some of the shots
 
@@ -42,5 +42,5 @@ Nikon created the FM to be their entry level consumer cameras, --much like the D
 
 ### Why would you use an SLR when you have a modern DSLR?
 
-Great question. I only use it for nostalgic reasons. Some of the shots I've taken could've been easily taken with an DSLR and made to look like vintage photos editing software ligh Photoshop or Lightroom. 
-But the random light leaks, that moment when you miss the focus by an inch, random specs on the film can't be so easily added in. There's something so satisfaying when you take your shot, get the film to be developed and then look through your frames and see that out of 36 you get 10-20 frames that are just perfect --for an amateur of course.
+Great question. I only use it for nostalgic reasons. Some of the shots I've taken could've been easily taken with an DSLR and made to look like vintage photos in editing software like Photoshop or Lightroom. 
+There's just something about the random light leaks, that moment when you miss the focus by an inch and random specs on the film that can't be so easily added in.
