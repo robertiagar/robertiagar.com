@@ -1,7 +1,6 @@
 ---
 excerpt_separator: <!--more-->
 layout: post
-published: false
 title: Getting back to writing on this blog
 categories:
   - hello there
