@@ -3,7 +3,7 @@ future: true
 markdown: kramdown
 highlighter: rouge
 permalink: /:year/:month/:day/:title/
-gems:
+plugins:
   - jemoji
   - jekyll-paginate
 
